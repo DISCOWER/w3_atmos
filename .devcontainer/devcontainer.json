@@ -1,0 +1,16 @@
+{
+    "name": "Ubuntu 22.04 with Ruby 3.2.4",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "rebornix.ruby",
+      "ms-vscode.vscode-ruby"
+    ],
+    "postCreateCommand": "gem install bundler",
+    "remoteUser": "root"
+}
+   
