@@ -36,6 +36,9 @@ Here you can see the 3D platform used in DISCOWER. In this website, we provide d
 
 ### Changelog
 The latest changes to the documentation can be found below:
+- **2025-01-15**:
+  - ATMOS website is now open-source! Feel free to send in Pull-Requests with updates to the documentation at [https://github.com/DISCOWER/w3_atmos](https://github.com/DISCOWER/w3_atmos)
+
 - **2025-11-24**: 
   - Updated Jetson Box STL files in [Avionics Plate](https://atmos.discower.io/jekyll/2024-11-23-avionics.html#onboard-computer) to match latest version of ATMOS
   - Added aluminium profile height for each layer in [Base Plate](https://atmos.discower.io/jekyll/2024-11-21-baseplate.html#pneumatic-plate---attached), [Actuation Plate](http://127.0.0.1:4000/jekyll/2024-11-22-actuation.html#aluminium-profiles), and [Avionics Plate](https://atmos.discower.io/jekyll/2024-11-23-avionics.html#payload-aluminium-profiles)
