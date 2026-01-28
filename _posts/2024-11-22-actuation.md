@@ -222,7 +222,7 @@ With the bottom part finished, we can now install the power regulator on the top
 </html>
 
 <div style="display: table; width: 500px; margin: 20px auto; border: 2px solid #000000; padding: 10px; text-align: center; background-color: var(background-color, #ffffff); border-radius: 4px;">
-  Download the <a href="/stl/actuator_module/actuator_mount_top.STL.STL" download>Original</a> and <a href="/stl/actuator_module/mirroractuator_mount_top.STL.STL" download>Mirrored</a> STLs.
+  Download the <a href="/stl/actuator_module/actuator_mount_top.STL" download>Original</a> and <a href="/stl/actuator_module/mirroractuator_mount_top.STL" download>Mirrored</a> STLs.
 </div>
 
 ### Thruster Module Assembly
