@@ -46,18 +46,19 @@ The latest changes to the documentation can be found below:
 
 ## Citing this work
 
-A preprint with information regarding ATMOS and the KTH Space Robotics Laboratory is [available on arXiv](https://arxiv.org/abs/2501.16973). If this work is useful for your research, consider citing:
+A preprint with information regarding ATMOS and the KTH Space Robotics Laboratory is [available on arXiv](https://arxiv.org/abs/2501.16973), with the latest version being published in [IEEE Transactions on Field Robotics](https://ieeexplore.ieee.org/document/11245595). If this work is useful for your research, consider citing:
 
 ```bibtex
-@misc{roque2025opensourcemodularspacesystems,
-      title={Towards Open-Source and Modular Space Systems with ATMOS}, 
-      author={Pedro Roque and Sujet Phodapol and Elias Krantz and Jaeyoung Lim and Joris Verhagen and Frank Jiang and David Dorner and Roland Siegwart and Ivan Stenius and Gunnar Tibert and Huina Mao and Jana Tumova and Christer Fuglesang and Dimos V. Dimarogonas},
-      year={2025},
-      eprint={2501.16973},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2501.16973}, 
-}
+@ARTICLE{11245595,
+  author={Roque, Pedro and Phodapol, Sujet and Krantz, Elias and Lim, Jaeyoung and Verhagen, Joris and Jiang, Frank J. and Dörner, David and Mao, Huina and Tibert, Gunnar and Siegwart, Roland and Stenius, Ivan and Tumova, Jana and Fuglesang, Christer and Dimarogonas, Dimos V.},
+  journal={IEEE Transactions on Field Robotics}, 
+  title={Toward Open-Source and Modular Space Systems With ATMOS}, 
+  year={2026},
+  volume={3},
+  number={},
+  pages={141-161},
+  keywords={Space vehicles;Robots;Hardware;Floors;Testing;Aerospace electronics;Attitude control;Orbits;MATLAB;Propulsion;Multirobot systems;orbital robotics},
+  doi={10.1109/TFR.2025.3632772}}
 ```
 <html>
 <iframe src="https://drive.google.com/file/d/1IQ3zcbxwNgNY_v_4YbrNEkiCZEV_he8L/preview" width="100%" height="435" allow="autoplay"></iframe>
