@@ -36,6 +36,9 @@ Here you can see the 3D platform used in DISCOWER. In this website, we provide d
 
 ### Changelog
 The latest changes to the documentation can be found below:
+- **2025-02-19**:
+  - Updated regulator part number for thruster module (Contribution from MIT)
+  - Updated baseplate aluminum profile height from 21cm to 23cm for extra clearance for thicker bottles
 - **2025-01-15**:
   - ATMOS website is now open-source! Feel free to send in Pull-Requests with updates to the documentation at [https://github.com/DISCOWER/w3_atmos](https://github.com/DISCOWER/w3_atmos)
 

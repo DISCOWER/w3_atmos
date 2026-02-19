@@ -274,7 +274,7 @@ Lastly, we can add the tubing to the manifold.
 
 ## Pneumatic Plate - Attached
 
-The last component to attach to the baseplate is the manifold plate. This plate is used to provide a mounting location for the valves that direct the airflow. The aluminium profiles are then attached to the base plate using M4 screws T-slot nuts - item 0106. Each aluminium profile should have a lenght of 21cm. Using 6mm tubing (item 0210), connect the bottles to the pneumatic plate according to the diagram. Print the provided 3D parts and assemble them according to the 3D model below.
+The last component to attach to the baseplate is the manifold plate. This plate is used to provide a mounting location for the valves that direct the airflow. The aluminium profiles are then attached to the base plate using M4 screws T-slot nuts - item 0106. Each aluminum profile should have a length of 23cm. Using 6mm tubing (item 0210), connect the bottles to the pneumatic plate according to the diagram. Print the provided 3D parts and assemble them according to the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
