@@ -5,83 +5,83 @@ date: 2022-02-04
 category: Jekyll
 layout: post
 ---
-
-<div class="logo-carousel">
-  <div class="logo-item"><img src="/assets/universities/kth.png" alt="KTH"></div>
-  <div class="logo-item"><img src="/assets/universities/usc.png" alt="USC"></div>
-  <div class="logo-item"><img src="/assets/universities/nyu.png" alt="NYU"></div>
-  <div class="logo-item"><img src="/assets/universities/ist-ul.png" alt="IST"></div>
-  <div class="logo-item"><img src="/assets/universities/ulux.png" alt="ULUX"></div>
-  <div class="logo-item"><img src="/assets/universities/icarus.svg" alt="Icarus"></div>
-  <div class="logo-item"><img src="/assets/universities/kth.png" alt="KTH"></div>
-  <div class="logo-item"><img src="/assets/universities/usc.png" alt="USC"></div>
-  <div class="logo-item"><img src="/assets/universities/nyu.png" alt="NYU"></div>
-  <div class="logo-item"><img src="/assets/universities/ist-ul.png" alt="IST"></div>
-  <div class="logo-item"><img src="/assets/universities/ulux.png" alt="ULUX"></div>
-  <div class="logo-item"><img src="/assets/universities/icarus.svg" alt="Icarus"></div>
-</div>
-
 <style>
-.logo-carousel img {
-  object-fit: contain;
-  display: block;
+.logo-track-wrap {
+  overflow: hidden;
   width: 100%;
-  height: 100%;
+  margin: 0 0 30px;
+  /* fade edges */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
 }
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: logo-scroll 20s linear infinite;
+}
+
+.logo-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes logo-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 .logo-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  padding: 10px;
-  width: 200px;
+  height: 80px;
+  width: 160px;
+  padding: 10px 20px;
+  flex-shrink: 0;
 }
-.logo-carousel {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  overflow: hidden;
+
+.logo-item img {
+  max-height: 60px;
+  max-width: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* opacity: 0.7; */
+  transition: opacity 0.2s;
+}
+
+.logo-item img:hover {
+  opacity: 1;
 }
 </style>
 
-<script>
-function initLogoCarousel() {
-    const carousel = document.querySelector('.logo-carousel');
+<!--
+  Items are duplicated so the loop is seamless.
+  animation translates by -50% (one full set), then snaps back to 0.
+-->
+<div class="logo-track-wrap">
+  <div class="logo-track">
+    <!-- original set -->
+    <div class="logo-item"><img src="/assets/universities/ist-ul.png" alt="IST"></div>
+    <div class="logo-item"><img src="/assets/universities/ulux.png"  alt="ULUX"></div>
+    <div class="logo-item"><img src="/assets/universities/kth.png"   alt="KTH"></div>
+    <div class="logo-item"><img src="/assets/universities/usc.png"   alt="USC"></div>
+    <div class="logo-item"><img src="/assets/universities/nyu.png"   alt="NYU"></div>
+    <div class="logo-item"><img src="/assets/universities/mit.png"   alt="MIT"></div>
+    <div class="logo-item"><img src="/assets/universities/uiuc.webp" alt="UIUC"></div>
+    <div class="logo-item"><img src="/assets/universities/icarus.svg" alt="Icarus"></div>
+    <!-- duplicate set for seamless loop -->
+    <div class="logo-item"><img src="/assets/universities/ist-ul.png" alt="IST"></div>
+    <div class="logo-item"><img src="/assets/universities/ulux.png"  alt="ULUX"></div>
+    <div class="logo-item"><img src="/assets/universities/kth.png"   alt="KTH"></div>
+    <div class="logo-item"><img src="/assets/universities/usc.png"   alt="USC"></div>
+    <div class="logo-item"><img src="/assets/universities/nyu.png"   alt="NYU"></div>
+    <div class="logo-item"><img src="/assets/universities/mit.png"   alt="MIT"></div>
+    <div class="logo-item"><img src="/assets/universities/uiuc.webp" alt="UIUC"></div>
+    <div class="logo-item"><img src="/assets/universities/icarus.svg" alt="Icarus"></div>
+  </div>
+</div>
 
-    // Retry if element or jQuery/Slick isn't ready yet
-    if (!carousel || !window.jQuery || !$.fn.slick) {
-        setTimeout(initLogoCarousel, 100); // check again after 100ms
-        return;
-    }
-
-    // Initialize only once
-    if (!$(carousel).hasClass('slick-initialized')) {
-        $(carousel).slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            speed: 1000,
-            autoplaySpeed: 1000,
-            arrows: false,
-            dots: false,
-            responsive: [
-                { breakpoint: 1024, settings: { slidesToShow: 3 } },
-                { breakpoint: 768, settings: { slidesToShow: 2 } },
-                { breakpoint: 480, settings: { slidesToShow: 1 } }
-            ]
-        });
-    }
-}
-
-// Poll until the carousel exists (works with dynamic GitBook loading)
-(function waitForCarousel() {
-    if (document.querySelector('.logo-carousel')) {
-        initLogoCarousel();
-    } else {
-        setTimeout(waitForCarousel, 100);
-    }
-})();
-</script>
 <div style="height: 30px;"></div>
 
 On this page, you find a collection of laboratories using ATMOS and/or PX4Space. Below you can see the platforms used in each laboratory.
