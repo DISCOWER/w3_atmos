@@ -134,6 +134,39 @@ At NYU's Riviere Robot Lab (RRL) led by [Ben Riviere](https://sites.google.com/v
 model-viewer { width: 100%; height: 500px; background-color: var(background-color, #ffffff); }
 </style>
 
+## Massachusetts Institute of Technology
+At MIT's Astrodynamics, Space Robotics, and Controls Lab [(ARCLab)](https://aeroastro.mit.edu/arclab/) led by [Richard Linares](https://aeroastro.mit.edu/people/richard-linares/), ATMOS will be used for astrodynamics and controls research:
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<model-viewer src="/3D/full_assy.glb" 
+              alt="A 3D model" 
+              ar 
+              auto-rotate 
+              camera-controls 
+              shadow-intensity="1">
+</model-viewer>
+
+<style>
+model-viewer { width: 100%; height: 500px; background-color: var(background-color, #ffffff); }
+</style>
+
+## University of Illinois Urbana-Champaign
+At UIUC's Space Sustainability and Autonomy Lab [(SSA Lab)](https://lab.minduliw.com) led by the incoming [Minduli Wijayatunga](https://www.minduliw.com/), ATMOS will be used for developing intelligent and safe autonomy for space operations:
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<model-viewer src="/3D/full_assy.glb" 
+              alt="A 3D model" 
+              ar 
+              auto-rotate 
+              camera-controls 
+              shadow-intensity="1">
+</model-viewer>
+
+<style>
+model-viewer { width: 100%; height: 500px; background-color: var(background-color, #ffffff); }
+</style>
+
+
 ## Icarus Robotics
 At [Icarus Robotics](https://www.icarusrobotics.com/), the ATMOS base is used as a test platform for microgravity robotics, simulating the microgravity dynamics of Icarus free-flyer. Below, we show the base platform used by Icarus.
 
