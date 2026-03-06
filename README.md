@@ -36,6 +36,9 @@ Here you can see the 3D platform used in DISCOWER. In this website, we provide d
 
 ### Changelog
 The latest changes to the documentation can be found below:
+- **2026-03-06**: 
+  - Added MIT and UIUC to ATMOS-supported institutions
+  - Updated Bill-of-Materials part 0212 with the correct version of the Festo Push-in T-connector (QSMT-6 instead of QST-6)
 - **2026-02-19**:
   - Contributions from Caltech (Vivian Norum and Teagan Abeling) and MIT (Kareena Shah and Brooke Schmelz): 
     - Updated regulator part number for thruster module.
