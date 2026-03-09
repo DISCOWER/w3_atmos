@@ -1,7 +1,7 @@
 ---
 title: Motor & Propeller Setup
 author: Prasetyo W. L. Sanjaya
-date: 2026-04-09
+date: 2026-03-09
 category: Jekyll
 layout: post
 ---
