@@ -81,13 +81,12 @@ We can also use QGroundControl to test the motors. Ensure your PX4 is powered an
 1. Open **QGroundControl**.
 2. Navigate to **Vehicle Setup** -> **Actuators**.
 3. Scroll down to the **Actuator Testing** section.
-4. Ensure the **Disarmed, Minimum, and Maximum** settings on **PWM MAIN** (or PWM AUX if you are using PWM AUX port) are as configured in the image below.
-5. Toggle the safety switch to **Enable Sliders** (Acknowledge the "Propellers are removed" warning).
-6. Slowly drag the slider for your specific motor upwards.
-7. **Observe the Motor:** The motor should begin spinning smoothly.
-8. **Observe the VESC Tool:** Switch back to the VESC Tool. You should see the live signal bar reacting in sync with your QGroundControl slider movements.
+4. Toggle the safety switch to **Enable Sliders** (Acknowledge the "Propellers are removed" warning).
+5. Slowly drag the slider for your specific motor upwards.
+6. **Observe the Motor:** The motor should begin spinning smoothly.
+7. **Observe the VESC Tool:** Switch back to the VESC Tool. You should see the live signal bar reacting in sync with your QGroundControl slider movements.
 
-![QGroundControl Actuator Testing Configuration](/assets/propeller/QGround_config.png)
+![QGroundControl Actuator Testing](/assets/propeller/QGround_config.png)
 
 <!-- TO DO -->
 <!-- - CAN Connection and Set Up -->
