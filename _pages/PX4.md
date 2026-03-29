@@ -33,6 +33,10 @@ We use PX4 Autopilot as the firmware for the Pixhawk 6X Mini, openly available h
    source install/setup.bash 
    ```
 
+4. Configure PX4 topics for ROS 2.  
+   The ROS 2 topics PX4 publishes (`fmu/out/`) and subscribes to (`fmu/in/`) are defined by `dds_topics.yaml` in the `PX4-Autopilot` directory. We recommend replacing this file with our version before firmware installation.  
+   Download ATMOS' [dds_topics.yaml](/assets/px4_autopilot/dds_topics.yaml) and replace the ones found at `PX4-Autopilot/src/modules/uxrce_dds_client/dds_topics.yaml`.
+
 ## Firmware Installation
 
 To upload the PX4 firmware to the Pixhawk controller:
