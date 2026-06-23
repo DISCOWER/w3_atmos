@@ -201,7 +201,7 @@ The pictures below show the PCB's front and back, as well as the schematic view.
 
 ### Power Regulator and Top Cover
 
-With the bottom part finished, we can now install the power regulator on the top cover. The power regulator is item 0003 and it is attached to the top cover (3D printed with the STL below) with two M5 screws and nuts. The assembly can be seen in the 3D model below.
+With the bottom part finished, we can now install the power regulator on the top cover. The power regulator is item 0003 and it is attached to the top cover (3D printed with the STL below) with two M4 screws and nuts. The assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
