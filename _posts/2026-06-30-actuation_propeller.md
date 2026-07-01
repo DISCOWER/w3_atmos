@@ -76,7 +76,7 @@ First, start by cutting with a water jet the actuation support plate, item 0101 
 
 ## Actuation Plate
 
-Then, we can waterjet the actuation plate that will host the motor brackets. This plate's geometry is specific to the propeller configuration — it is shaped to mount the four motor brackets in their planar layout — but it attaches to the middle plate the same way as the thruster variant: using 8 standoffs, item 0107, and 8 M5 screws. The DXF file for it can be downloaded below. The assembly can be seen in the 3D model below.
+Then, we can waterjet the actuation plate that will host the motor brackets. This plate's geometry is specific to the propeller configuration - it is shaped to mount the four motor brackets in their planar layout — but it attaches to the middle plate the same way as the thruster variant: using 8 standoffs, item 0107, and 8 M5 screws. The DXF file for it can be downloaded below. The assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
