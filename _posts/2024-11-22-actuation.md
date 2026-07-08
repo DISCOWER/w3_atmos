@@ -107,7 +107,7 @@ At this stage, we are ready to assemble the thruster modules. We will provide in
 
 ### First Solenoid
 
-Then, we can install the first solenoid with the 4-to-2mm adapter, as well as the 2mm tubing (items 0209, 0211, 0216). The solenoid is attached to the housing using the provided 3D printed part that is secured with M2 screws. The assembly can be seen in the 3D model below.
+Then, we can install the first solenoid with the 4-to-2mm adapter, as well as the 2mm tubing (items 0209, 0211, 0216). Airflow through this solenoid (item 0209) is non-reversible — verify input/output orientation before installing. The solenoid is attached to the housing using the provided 3D printed part that is secured with M2 screws. The assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -157,7 +157,7 @@ Then, we can install the second solenoid, on top of the first one, as shown in t
 
 ### Power and Signal Distribution PCB
 
-Now we are ready to install the power and signal distribution PCB on the side of the thruster module, as shown below. The PCB is composed of items 0010 and 0011. The PCB is attached to the housing using 2 M2 screws and nuts. The assembly can be seen in the 3D model below.
+Now we are ready to install the power and signal distribution PCB on the side of the thruster module, as shown below. The PCB is composed of items 0010 and 0011. The PCB is attached to the housing using 2 M2 screws and nuts. Add M2 washers to offset the PCB from the housing. The assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
