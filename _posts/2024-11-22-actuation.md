@@ -358,7 +358,7 @@ Below 3D view illustrates each thruster (T1-T8) and thruster module (M1-M4). Ref
 
 ## Actuator Plate and Pneumatic Connection
 
-With all thruster modules assembled, it is time to install them on the plate and do all the power and pneumatic connections. For the pneumatic connections, please follow the diagram in the 3D model below, connecting the same letters to the same spots (that is A-A, B-B, etc). The power connections from the power regulators should be connected to the power hub in the actuation plate (item 0008) using power cables capable of passing a peak of 4A. Lastly, connect the PWM cables (item TODO) to the PX4 mini PWM receptor.
+With all thruster modules assembled, it is time to install them on the plate and do all the power and pneumatic connections. For the pneumatic connections, please follow the diagram in the 3D model below, connecting the same letters to the same spots (that is A-A, B-B, etc). The power connections from the power regulators should be connected to the power hub in the actuation plate (item 0008) using power cables capable of passing a peak of 4A. Lastly, connect the PWM cables (item 0014) to the PX4 mini PWM receptor.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
