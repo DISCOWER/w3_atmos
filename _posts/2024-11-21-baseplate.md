@@ -55,7 +55,7 @@ The baseplate is composed of a single 8 mm thick polycarbonate plate - item 0101
 
 ## Air Bearings
 
-With the plate cut, we are ready to start attaching the air bearings. These bearings are used to provide a frictionless motion to the platform. The bearings are attached to the plate using the provided mounting screws, nuts and washers - items 0103 and 0104. In the center of the plate, we should also attach an X-connecting piece to allow for the air supply to reach the bearings - item 0214. Then, connect the air bearings to the X-connector using 6mm tubing - item 0210 - and the connector 0208. The final assembly can be seen in the 3D model below.
+With the plate cut, we are ready to start attaching the air bearings. These bearings are used to provide a frictionless motion to the platform. The bearings are attached to the plate using the provided mounting screws, nuts and washers - items 0103 and 0104. In the center of the plate, on the underside, we should also attach an X-connecting piece to allow for the air supply to reach the bearings - item 0214. Then, connect the air bearings to the X-connector using 6mm tubing - item 0210 - and the connector 0208. The final assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
