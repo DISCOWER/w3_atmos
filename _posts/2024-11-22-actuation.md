@@ -107,7 +107,7 @@ At this stage, we are ready to assemble the thruster modules. We will provide in
 
 ### First Solenoid
 
-Then, we can install the first solenoid with the 4-to-2mm adapter, as well as the 2mm tubing (items 0209, 0211, 0216). Airflow through this solenoid (item 0209) is non-reversible — verify input/output orientation before installing. The solenoid is attached to the housing using the provided 3D printed part that is secured with M2 screws. The assembly can be seen in the 3D model below.
+Then, we can install the first solenoid with the 4-to-2mm adapter, as well as the 2mm tubing (items 0209, 0211, 0216). Airflow through this solenoid (item 0209) is non-reversible — verify input/output orientation before installing. The solenoid is attached to the housing using the provided 3D printed part that is secured with M2x8 mm screws. The assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -132,7 +132,7 @@ Then, we can install the first solenoid with the 4-to-2mm adapter, as well as th
 
 ### Second Solenoid
 
-Then, we can install the second solenoid, on top of the first one, as shown in the visualization below. The items used are 0209, 0211, and 0216. The solenoid is attached to the housing using the provided 3D printed part that is secured with M2 screws. The assembly can be seen in the 3D model below. 
+Then, we can install the second solenoid, on top of the first one, as shown in the visualization below. The items used are 0209, 0211, and 0216. The solenoid is attached to the housing using the provided 3D printed part that is secured with M2x8 mm screws. The assembly can be seen in the 3D model below. 
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -157,7 +157,7 @@ Then, we can install the second solenoid, on top of the first one, as shown in t
 
 ### Power and Signal Distribution PCB
 
-Now we are ready to install the power and signal distribution PCB on the side of the thruster module, as shown below. The PCB is composed of items 0010 and 0011. The PCB is attached to the housing using 2 M2 screws and nuts. Add M2 washers to offset the PCB from the housing. The assembly can be seen in the 3D model below.
+Now we are ready to install the power and signal distribution PCB on the side of the thruster module, as shown below. The PCB is composed of items 0010 and 0011. The PCB is attached to the housing using 2 M2x10 mm screws and nuts. Add M2 washers to offset the PCB from the housing. The assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -201,7 +201,7 @@ The pictures below show the PCB's front and back, as well as the schematic view.
 
 ### Power Regulator and Top Cover
 
-With the bottom part finished, we can now install the power regulator on the top cover. The power regulator is item 0003 and it is attached to the top cover (3D printed with the STL below) with two M4 screws and nuts. The assembly can be seen in the 3D model below.
+With the bottom part finished, we can now install the power regulator on the top cover. The power regulator is item 0003 and it is attached to the top cover (3D printed with the STL below) with two M4x8 mm screws and nuts. The assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -227,7 +227,7 @@ With the bottom part finished, we can now install the power regulator on the top
 
 ### Thruster Module Assembly
 
-The last step is to attach the top cover using M3 screws and nuts, as per the assembly below.
+The last step is to attach the top cover using M3x8 mm screws and nuts, as per the assembly below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -491,7 +491,7 @@ With all thruster modules assembled, it is time to install them on the plate and
 
 ## Aluminium Profiles
 
-Lastly, install the aluminium profiles in the middle plate. Each aluminium profile should have a lenght of 12cm. The profiles are attached to the plate using M4 screws and nuts. The assembly can be seen in the 3D model below- At this stage, your middle plate is complete.
+Lastly, install the aluminium profiles in the middle plate. Each aluminium profile should have a lenght of 12cm. The profiles are attached to the plate using M4x20 mm screws and nuts. The assembly can be seen in the 3D model below- At this stage, your middle plate is complete.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>

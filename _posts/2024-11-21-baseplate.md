@@ -83,7 +83,7 @@ With the plate cut, we are ready to start attaching the air bearings. These bear
 
 ## Bottle Supports and Regulators
 
-At this stage, we are ready to install the bottle supports, thruster pressure regulator, and air bearings regulator. The first step is to print all the 3D supports in [here](/stl/pneumatic_mount/base_plate_prints.zip). The parts are then attached to the plate using M4 screws, nuts and washers according to the 3D model below. The items used in this step are 0206, 0207, 0208. The air bearings regulator - item 0206 - takes the tubing run coming up from the X-connector beneath the plate. For the thruster pressure regulator - item 0207 - screw a push-in fitting - item 0208 - into the inlet and outlet ports and tighten each with a wrench before connecting any tubing; the G1/4 thread seals against the port face, and leaving these hand-tight is a common source of air leaks. The 6mm tubing then presses into the fittings by hand.
+At this stage, we are ready to install the bottle supports, thruster pressure regulator, and air bearings regulator. The first step is to print all the 3D supports in [here](/stl/pneumatic_mount/base_plate_prints.zip). The parts are then attached to the plate using M4x20 mm screws, nuts and washers according to the 3D model below. The items used in this step are 0206, 0207, 0208. The air bearings regulator - item 0206 - takes the tubing run coming up from the X-connector beneath the plate. For the thruster pressure regulator - item 0207 - screw a push-in fitting - item 0208 - into the inlet and outlet ports and tighten each with a wrench before connecting any tubing; the G1/4 thread seals against the port face, and leaving these hand-tight is a common source of air leaks. The 6mm tubing then presses into the fittings by hand.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -206,7 +206,7 @@ First, start by 3D printing the baseplate.
 
 ### Manifold - Supports
 
-Then, we attach the 3D printed supports for the valves and tubing using M3 screws and nuts.
+Then, we attach the 3D printed supports for the valves and tubing using M3x8 mm screws and nuts.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -274,7 +274,7 @@ Lastly, we can add the tubing to the manifold.
 
 ## Pneumatic Plate - Attached
 
-The last component to attach to the baseplate is the manifold plate. This plate is used to provide a mounting location for the valves that direct the airflow. The aluminium profiles are then attached to the base plate using M4 screws T-slot nuts - item 0106. Each aluminum profile should have a length of 23cm. Using 6mm tubing (item 0210), connect the bottles to the pneumatic plate according to the diagram. Print the provided 3D parts and assemble them according to the 3D model below.
+The last component to attach to the baseplate is the manifold plate. This plate is used to provide a mounting location for the valves that direct the airflow. The aluminium profiles are then attached to the base plate using M4x20 mm screws T-slot nuts - item 0106. Each aluminum profile should have a length of 23cm. Using 6mm tubing (item 0210), connect the bottles to the pneumatic plate according to the diagram. Print the provided 3D parts and assemble them according to the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
