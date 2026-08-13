@@ -83,7 +83,7 @@ With the plate cut, we are ready to start attaching the air bearings. These bear
 
 ## Bottle Supports and Regulators
 
-At this stage, we are ready to install the bottle supports, thrusters, and air bearings regulators. The first step is to print all the 3D parts in [here](/stl/pneumatic_mount/base_plate_prints.zip). The parts are then attached to the plate using M4 screws, nuts and washers according to the 3D model below. The items used in this step are 0206, 0207. Once the tubing is connected, tighten the push-in fittings (item 0208) on both sides of the pressure regulator (item 0207) with a wrench; leaving them hand-tight is a common source of air leaks.
+At this stage, we are ready to install the bottle supports, thruster pressure regulator, and air bearings regulator. The first step is to print all the 3D supports in [here](/stl/pneumatic_mount/base_plate_prints.zip). The parts are then attached to the plate using M4 screws, nuts and washers according to the 3D model below. The items used in this step are 0206, 0207, 0208. The air bearings regulator - item 0206 - takes the tubing run coming up from the X-connector beneath the plate. For the thruster pressure regulator - item 0207 - screw a push-in fitting - item 0208 - into the inlet and outlet ports and tighten each with a wrench before connecting any tubing; the G1/4 thread seals against the port face, and leaving these hand-tight is a common source of air leaks. The 6mm tubing then presses into the fittings by hand.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
