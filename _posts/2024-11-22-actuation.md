@@ -54,7 +54,7 @@ First, start by cutting with a water jet the actuation support plate, item 0201 
 
 ## Actuation Plate
 
-Then, we can waterjet the actuation plate that will host the thrusters. The DXF file for it can be downloaded below. The actuation plate is attached to the middle plate using 8 standoffs, item 0107, and 8 M5 screws. The assembly can be seen in the 3D model below.
+Then, we can waterjet the actuation plate that will host the thrusters. The DXF file for it can be downloaded below. The actuation plate is attached to the middle plate using 8 standoffs, item 0107, and 8 M5×20 mm screws. The assembly can be seen in the 3D model below.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
