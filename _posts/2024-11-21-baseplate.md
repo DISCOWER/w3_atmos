@@ -130,7 +130,7 @@ Next, we are ready to test the bottles' mounting and install all in-line regulat
 
 ## Aluminium Profiles
 
-Almost at the last step, we are now ready to install the supporting aluminium profiles. These profiles are used to provide structural support to the platform and are attached to the plate using the provided angle brackets and T-slot nuts. The items used in this step are 0102, 0105, 0106. M4 screws and nuts are used to secure these items to the locations shown in the 3D model below.
+Almost at the last step, we are now ready to install the supporting aluminium profiles. These profiles are used to provide structural support to the platform and are attached to the plate using the provided angle brackets and T-slot nuts. The items used in this step are 0102, 0105, 0106. M4×8 screws and nuts are used to secure these items to the locations shown in the 3D model below. Attach the angle brackets - item 0105 - to the profiles first, working on a level surface: leave the T-slot nuts loose enough to slide, square everything up, then tighten evenly. Brackets set slightly off-square here will leave the profiles uneven once mounted to the polycarbonate plate.
 
 
 <html>
