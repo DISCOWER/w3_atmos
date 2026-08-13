@@ -206,7 +206,7 @@ First, start by 3D printing the baseplate.
 
 ### Manifold - Supports
 
-Then, we attach the 3D printed supports for the valves and tubing.
+Then, we attach the 3D printed supports for the valves and tubing using M3 screws and nuts.
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
