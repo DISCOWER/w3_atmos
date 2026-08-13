@@ -1,65 +1,23 @@
 ---
-title: Motor & Propeller Setup
+title: Propeller VESC Setup
 author: Prasetyo W. L. Sanjaya
 date: 2026-03-09
 category: Jekyll
 layout: post
+order_no: 2
 ---
 
+***This page is a work-in-progress***
+
 This guide details the software configuration process for setting up the propeller actuation layer on the DISCOWER ATMOS Platform using the VESC ecosystem and PX4 (via QGroundControl).
-
-<html>
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<model-viewer src="/assets/propeller/actuator_plate.glb" 
-              alt="Actuator Plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
-</model-viewer>
-<style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
-</style>
-</html>
-
-
-## Requirements
-
-### Hardware Requirements
-* **Motor Controller:** [VESC SIX EDU](https://trampaboards.com/vesc-six-education--with-imu-p-34332.html)
-* **CAN/Logging Interface:** [VESC Express](https://trampaboards.com/vesc-express-with-canbus-power-cable-p-35245.html)
-* **Brushless Motor:** [T-Motor VELOX V2208 V2](https://www.t-hobby.com/products/fpv-brushless-motor-v2208-v2-for-freestyle-drones?variant=0175cb64-e358-43de-bfa5-cd86da11b202)
-* **Power:** 6S Battery
-* **Cables:** Micro-USB Data Cable
-* **Pixhawk PX4** 
-* **CAN HUB:** [Holybro CAN Hub](https://holybro.com/products/can-hub?srsltid=AfmBOoqFdTyuq583F9LTZAb38almERX48EPLFEsKkp_eh8mmc-xa2V7M) 
-<!-- * or [PWM Extension](https://holybro.com/products/pwm-ext-board?_pos=1&_psq=pwm-ext&_ss=e&_v=1.0) (for PWM command) -->
-
-
-### Wiring Diagram
-<b>Using CAN Command</b>
-
-![Wiring diagram for using CAN command](/assets/propeller/wiring_propeller_CAN.png)
-
-<!-- <details markdown="1"> -->
-
-<!-- <summary>Using PWM Command</summary>
-
-![Wiring diagram for using PWM command](/assets/propeller/wiring_propeller_PWM.png)
-
-</details> -->
 
 ### Software Requirements
 * **VESC Tool Free** ([Download](https://vesc-project.com/vesc_tool))
 
 * **Config Files For Using CAN Command**
 
-  * **Motor Configuration File:** [26032026_vesc_mcconf_CAN.xml](/assets/propeller/26032026_vesc_mcconf_CAN.xml)
-  * **App Configuration File:** [26032026_vesc_appconf_CAN.xml](/assets/propeller/26032026_vesc_appconf_CAN.xml)
+  * **Motor Configuration File:** [26032026_vesc_mcconf_CAN.xml](/assets/propeller/26032026_vesc_mcconf_CAN.xml){:download="26032026_vesc_mcconf_CAN.xml" target="_blank"}
+  * **App Configuration File:** [26032026_vesc_appconf_CAN.xml](/assets/propeller/26032026_vesc_appconf_CAN.xml){:download="26032026_vesc_appconf_CAN.xml" target="_blank"}
   
 
 <!-- * <details markdown="1">
@@ -70,31 +28,12 @@ This guide details the software configuration process for setting up the propell
   
   </details> -->
 
-
-### Physical Propeller Configuration
-
-The ATMOS platform uses a 4-motor planar configuration, with each motor offset by 90 degrees along the perimeter of the base plate. 
-
-![Propeller Configuration](/assets/propeller/prop_plate_config.png) 
-
-The vehicle operates using the standard **FLU (Front, Left, Up)** coordinate frame. Because the motors are mounted in a fixed, opposing layout, sending a positive (`+`) command generates thrust that pushes the vehicle in the following directions:
-
-#### 1. X-Axis (Front and Back Movement)
-* **Motor 1:** A positive command pushes the ATMOS to move **backward** (-X direction).
-* **Motor 2:** A positive command pushes the ATMOS to move **forward** (+X direction).
-
-#### 2. Y-Axis (Left and Right Movement)
-* **Motor 3:** A positive command pushes the ATMOS to move **right** (-Y direction).
-* **Motor 4:** A positive command pushes the ATMOS to move **left** (+Y direction).
-
----
-
 >## ⚠️ CRITICAL SAFETY WARNINGS
 >
 >1. **REMOVE THE PROPELLER:** If possible, do not perform these setup steps with a propeller attached to the motor. Unexpected throttle spikes during configuration can cause severe injury or damage equipment. 
 >2. **BEWARE THE GRID GROUND LOOP:** If your PC and your VESC are both grounded to the wall grid, massive currents can travel through the USB cable and destroy your hardware. **Always run your laptop on battery power (unplug the charger from the wall)** when connecting via USB to a live VESC. 
+>       - Ground loop diagram: [VESC_GroundLoop.png](/assets/propeller/VESC_GroundLoop.png)
 >       - More on the ground loop: [VESC Documentation](https://trampaboards.com/vesc-six-education--with-imu-p-34332.html)
->       ![Guide on Avoiding Ground Loop from VESC](/assets/propeller/VESC_GroundLoop.png)
 {: .block-warning }
 
 

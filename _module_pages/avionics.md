@@ -2,6 +2,7 @@
 title: Avionics Plate
 author: Pedro Roque
 date: 2024-11-23
+order_no: 4
 category: Jekyll
 layout: post
 ---
@@ -11,18 +12,18 @@ The top plate in the free-flyer is the avionics plate. In this plate, we can fin
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/4. Top Plate/4_f.glb" 
-              alt="Top plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Top plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -33,18 +34,18 @@ The first step is to waterjet the avionics plate. The DXF file for this plate is
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/4. Top Plate/4_a.glb" 
-              alt="Top plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Top plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 <div style="display: table; width: 300px; margin: 20px auto; border: 2px solid #000000; padding: 10px; text-align: center; background-color: var(background-color, #ffffff); border-radius: 4px;">
@@ -59,18 +60,18 @@ The second step is to install the Pixhawk Mini in the platform. We suggest to al
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/4. Top Plate/4_b.glb" 
-              alt="Top plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Top plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -83,18 +84,18 @@ The support for the switch is available in the STL file below.
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/4. Top Plate/4_c.glb" 
-              alt="Top plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Top plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -109,18 +110,18 @@ For the onboard computer, we recommend to install it in the location suggested i
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/4. Top Plate/4_d.glb" 
-              alt="Top plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Top plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -143,18 +144,18 @@ The last step is to install the aluminium profiles for payload support. Each ver
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/4. Top Plate/4_e.glb" 
-              alt="Top plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Top plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -165,17 +166,17 @@ Payloads can now be attached to the top of the platform and power and data can b
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/4. Top Plate/4_f.glb" 
-              alt="Top plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Top plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
