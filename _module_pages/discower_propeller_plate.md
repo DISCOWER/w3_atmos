@@ -1,29 +1,32 @@
 ---
-title: Actuation Plate - Propeller Module
+title: DISCOWER Propeller Plate
 author: Prasetyo WL Sanjaya, Elias Krantz
 date: 2026-06-30
+order_no: -1
+nav_parent: actuation
 category: Jekyll
 layout: post
 ---
 
+***This page is a work-in-progress***
+
 The second layer in the free-flyer is the actuation plate. This layer is a modular component that provides propulsion via brushless motors and propellers, but which can also be switched for other actuator models. Below, you can see the 3D model of the propeller plate with 4 motors.
 
 <html>
-
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2.1 Middle Plate Propeller/2_1_a.glb" 
-              alt="Full propeller plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Full propeller plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -34,18 +37,19 @@ The propeller plate is designed as a drop-in alternative to the thruster plate: 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2.1 Middle Plate Propeller/alpha3_v4.1_dual.glb" 
-              alt="ATMOS dual configuration with thruster and propeller plates" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="ATMOS dual configuration with thruster and propeller plates" 
+			  ar 
+			  auto-rotate 
+			  camera-controls
+			  camera-target="0m 0.25m 0m" 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -56,18 +60,18 @@ First, start by cutting with a water jet the actuation support plate, item 0101 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2.1 Middle Plate Propeller/2_1_b.glb" 
-              alt="Actuation support plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Actuation support plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 <div style="display: table; width: 300px; margin: 20px auto; border: 2px solid #000000; padding: 10px; text-align: center; background-color: var(background-color, #ffffff); border-radius: 4px;">
@@ -81,18 +85,18 @@ Then, we can waterjet the actuation plate that will host the motor brackets. Thi
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2.1 Middle Plate Propeller/2_1_c.glb" 
-              alt="Actuation plate with support plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Actuation plate with support plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 <div style="display: table; width: 300px; margin: 20px auto; border: 2px solid #000000; padding: 10px; text-align: center; background-color: var(background-color, #ffffff); border-radius: 4px;">
@@ -108,18 +112,18 @@ At this stage, we are ready to assemble the motor modules. We will provide instr
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2.1 Middle Plate Propeller/2_1_d.glb" 
-              alt="Motor bracket" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Motor bracket" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -134,18 +138,18 @@ Next, mount the Velox Veloce V2208 V2 motor onto the bracket using its included 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2.1 Middle Plate Propeller/2_1_e.glb" 
-              alt="Bracket with motor and propeller" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Bracket with motor and propeller" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -171,54 +175,54 @@ Below 3D view illustrates each motor module (M1-M4). Refer to it for correct pla
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
-    .hotspot{
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: blue;
-    box-sizing: border-box;
-    pointer-events: none;
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
+	.hotspot{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: blue;
+	box-sizing: border-box;
+	pointer-events: none;
   }
   .hotspot[slot="hotspot-hand"]{
-    --min-hotspot-opacity: 0;
-    background-color: red;
+	--min-hotspot-opacity: 0;
+	background-color: red;
   }
   .annotation{
-    background-color: #888888;
-    position: absolute;
-    transform: translate(10px, 10px);
-    border-radius: 10px;
-    padding: 10px;
+	background-color: #888888;
+	position: absolute;
+	transform: translate(10px, 10px);
+	border-radius: 10px;
+	padding: 10px;
   }
   /* This keeps child nodes hidden while the element loads */
   :not(:defined) > * {
-    display: none;
+	display: none;
   }
 </style>
 <model-viewer src="/3D/2.1 Middle Plate Propeller/2_1_a.glb" 
-              alt="Motor module placement" 
-              ar 
-              camera-controls 
-              shadow-intensity="1">
-     <button class="hotspot" slot="hotspot-module-1" data-position="-0.02 0.36 -0.015" data-normal="0 0 -1">
-         <div class="annotation">M1</div>
-    </button>
-     <button class="hotspot" slot="hotspot-module-2" data-position="0.13 0.36 0.05" data-normal="0 0 -1">
-         <div class="annotation">M4</div>
-    </button>
-        <button class="hotspot" slot="hotspot-module-3" data-position="-0.09 0.36 0.13" data-normal="0 0 -1">
-         <div class="annotation">M3</div>
-    </button>
-        <button class="hotspot" slot="hotspot-module-4" data-position="0.06 0.36 0.2" data-normal="0 0 -1">
-         <div class="annotation">M2</div>
-    </button>
+			  alt="Motor module placement" 
+			  ar 
+			  camera-controls 
+			  shadow-intensity="1">
+	 <button class="hotspot" slot="hotspot-module-1" data-position="-0.02 0.36 -0.015" data-normal="0 0 -1">
+		 <div class="annotation">M1</div>
+	</button>
+	 <button class="hotspot" slot="hotspot-module-2" data-position="0.13 0.36 0.05" data-normal="0 0 -1">
+		 <div class="annotation">M4</div>
+	</button>
+		<button class="hotspot" slot="hotspot-module-3" data-position="-0.09 0.36 0.13" data-normal="0 0 -1">
+		 <div class="annotation">M3</div>
+	</button>
+		<button class="hotspot" slot="hotspot-module-4" data-position="0.06 0.36 0.2" data-normal="0 0 -1">
+		 <div class="annotation">M2</div>
+	</button>
 </model-viewer>
 </html>
 
@@ -228,15 +232,17 @@ The ATMOS platform uses a 4-motor planar configuration, with each motor offset b
 
 ![Propeller Configuration](/assets/propeller/prop_plate_config.png) 
 
-The vehicle operates using the standard **FLU (Front, Left, Up)** coordinate frame. Because the motors are mounted in a fixed, opposing layout, sending a positive (`+`) command generates thrust that pushes the vehicle in the following directions:
+***Figure to be updated***
+
+Using the default FRD coordinate frame of the Pixhawk controller, i.e. X-forward, Y-right, Z-down, sending a positive (`+`) command generates thrust that pushes the vehicle in the following directions:
 
 #### 1. X-Axis (Front and Back Movement)
 * **Motor 1:** A positive command pushes the ATMOS to move **backward** (-X direction).
 * **Motor 2:** A positive command pushes the ATMOS to move **forward** (+X direction).
 
 #### 2. Y-Axis (Left and Right Movement)
-* **Motor 3:** A positive command pushes the ATMOS to move **right** (-Y direction).
-* **Motor 4:** A positive command pushes the ATMOS to move **left** (+Y direction).
+* **Motor 3:** A positive command pushes the ATMOS to move **right** (+Y direction).
+* **Motor 4:** A positive command pushes the ATMOS to move **left** (-Y direction).
 
 ---
 
@@ -247,17 +253,17 @@ Lastly, install the aluminium profiles in the middle plate. Each aluminium profi
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2.1 Middle Plate Propeller/2_1_f.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Bottom plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>

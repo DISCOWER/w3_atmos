@@ -4,10 +4,10 @@
 
         {%- include head.html -%}
 
-        {% assign reversed_posts = site.posts | reverse %}
+        {% assign ordered_posts = site.module_pages | where_exp: "item", "item.order_no >= 0" | sort: "order_no" %}
 
-        {% if reversed_posts %}
-            <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
+        {% if ordered_posts %}
+            <link rel="next" href="{{site.baseurl}}{{ordered_posts.first.url}}" />
         {% endif %}
     </head>
     <body>
@@ -35,8 +35,8 @@
                         <i class="fa"></i>
                     </a>
 
-                    {% if reversed_posts %}
-                        <a href="{{site.baseurl}}{{reversed_posts.first.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{reversed_posts.first.title}}">
+                    {% if ordered_posts %}
+                        <a href="{{site.baseurl}}{{ordered_posts.first.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{ordered_posts.first.title}}">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     {% endif %}

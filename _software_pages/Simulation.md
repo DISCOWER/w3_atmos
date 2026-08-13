@@ -2,14 +2,14 @@
 title: Simulation
 author: Pedro Roque
 date: 2025-02-04
-category: Jekyll
-layout: post
+layout: software-page
+order_no: 4
 ---
 This guide outlines the steps to run Software-In-The-Loop (SITL) simulation with ATMOS and PX4 Autopilot.
 
 ## Running the Simulator
 
-Before starting, ensure PX4 Autopilot is set up on your local machine as outlined in [PX4 Autopilot section]({{ site.url }}/pages/PX4/#px4-autopilot). It is also useful to have QGroundControl, outlined in [Setting up QGroundControl]({{ site.url }}/pages/PX4/#setting-up-qgroundcontrol).
+Before starting, ensure PX4 Autopilot is set up on your local machine as outlined in [PX4 Autopilot section]({{ site.url }}/software_pages/PX4/#px4-autopilot). It is also useful to have QGroundControl, outlined in [Setting up QGroundControl]({{ site.url }}/software_pages/PX4/#setting-up-qgroundcontrol).
 
 The FreeFlyers with PX4 controller can be simulated using Gazebo. Gazebo should have been installed when setting up required packages for `PX4-Autopilot`. If not, installation instructions for Gazebo can be found [here](https://gazebosim.org/docs/harmonic/install_ubuntu/).
 

@@ -4,7 +4,7 @@
 
         {%- include head.html -%}
 
-        {% assign ordered_posts = site.module_pages | where_exp: "item", "item.order_no >= 0" | sort: "order_no" %}
+        {% assign ordered_posts = site[page.collection] | where_exp: "item", "item.order_no >= 0" | sort: "order_no" %}
         {% assign current_index = -1 %}
         {% for ordered_post in ordered_posts %}
             {% if ordered_post.url == page.url %}
@@ -78,6 +78,10 @@
 
         <!-- jQuery (Load first) -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        {% if site.mathjax.enabled %}
+            {%- include mathjax.html -%}
+        {% endif %}
 
     </body>
 </html>

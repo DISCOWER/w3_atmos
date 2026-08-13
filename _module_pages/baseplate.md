@@ -2,6 +2,7 @@
 title: Base Plate
 author: Pedro Roque
 date: 2024-11-21
+order_no: 2
 category: Jekyll
 layout: post
 ---
@@ -12,18 +13,18 @@ To assemble a free-flyer, we will start with the bottom plate. This plate provid
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/1. Bottom Plate/1_f.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Bottom plate" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -34,18 +35,18 @@ The baseplate is composed of a single 8 mm thick polycarbonate plate - item 0101
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/1. Bottom Plate/1_a.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -60,18 +61,18 @@ With the plate cut, we are ready to start attaching the air bearings. These bear
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/1. Bottom Plate/1_b.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -88,18 +89,18 @@ At this stage, we are ready to install the bottle supports, thrusters, and air b
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/1. Bottom Plate/1_c.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 <div style="display: table; width: 300px; margin: 20px auto; border: 2px solid #000000; padding: 10px; text-align: center; background-color: var(background-color, #ffffff); border-radius: 4px;">
@@ -113,18 +114,18 @@ Next, we are ready to test the bottles' mounting and install all in-line regulat
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/1. Bottom Plate/1_d.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -136,18 +137,18 @@ Almost at the last step, we are now ready to install the supporting aluminium pr
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/1. Bottom Plate/1_e.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -160,19 +161,19 @@ At this point, we are ready to assemble the manifold plate that will direct the 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3.1 Manifold/3_1_d.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              camera-orbit="180deg 75deg 3m" 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  camera-orbit="180deg 75deg 3m" 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -188,19 +189,19 @@ First, start by 3D printing the baseplate.
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3.1 Manifold/3_1_a.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              camera-orbit="180deg 75deg 3m" 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  camera-orbit="180deg 75deg 3m" 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -211,19 +212,19 @@ Then, we attach the 3D printed supports for the valves and tubing.
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3.1 Manifold/3_1_b.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              camera-orbit="180deg 75deg 3m" 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  camera-orbit="180deg 75deg 3m" 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -234,19 +235,19 @@ Next, we attach the valves and T-pieces to the manifold plate using the valve su
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3.1 Manifold/3_1_c.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              camera-orbit="180deg 75deg 3m" 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  camera-orbit="180deg 75deg 3m" 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -255,19 +256,19 @@ Lastly, we can add the tubing to the manifold.
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3.1 Manifold/3_1_d.glb" 
-              alt="Bottom plate - PC" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              camera-orbit="180deg 75deg 3m" 
-              shadow-intensity="1">
+			  alt="Bottom plate - PC" 
+			  ar 
+			  auto-rotate 
+			  camera-controls 
+			  camera-orbit="180deg 75deg 3m" 
+			  shadow-intensity="1">
 </model-viewer>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
 </style>
 </html>
 
@@ -279,77 +280,77 @@ The last component to attach to the baseplate is the manifold plate. This plate 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style>
-    model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
-    }
-    .hotspot{
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: blue;
-    box-sizing: border-box;
-    pointer-events: none;
+	model-viewer {
+		width: 100%;
+		height: 500px;
+		background-color: var(background-color, #ffffff);
+	}
+	.hotspot{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: blue;
+	box-sizing: border-box;
+	pointer-events: none;
   }
   .hotspot[slot="hotspot-hand"]{
-    --min-hotspot-opacity: 0;
-    background-color: red;
+	--min-hotspot-opacity: 0;
+	background-color: red;
   }
   .annotation{
-    background-color: #888888;
-    position: absolute;
-    transform: translate(10px, 10px);
-    border-radius: 10px;
-    padding: 10px;
+	background-color: #888888;
+	position: absolute;
+	transform: translate(10px, 10px);
+	border-radius: 10px;
+	padding: 10px;
   }
   /* This keeps child nodes hidden while the element loads */
   :not(:defined) > * {
-    display: none;
+	display: none;
   }
 </style>
 <model-viewer src="/3D/1. Bottom Plate/1_f.glb" 
-              alt="Bottom plate" 
-              ar 
-              camera-controls 
-              shadow-intensity="1">
-    <button class="hotspot" slot="hotspot-frombottle1" data-position="0.075 0.223 -0.15" data-normal="0 0 -1">
-         <div class="annotation">From bottle 1.</div>
-    </button>
-    <button class="hotspot" slot="hotspot-frombottle2" data-position="0.075 0.195 -0.15" data-normal="0 0 -1">
-         <div class="annotation">From bottle 2.</div>
-    </button>
-    <button class="hotspot" slot="hotspot-frombottle3" data-position="0.075 0.169 -0.15" data-normal="0 0 -1">
-         <div class="annotation">From bottle 3.</div>
-    </button>
-    <button class="hotspot" slot="hotspot-actuation" data-position="0.065 0.135 -0.15" data-normal="0 0 -1">
-         <div class="annotation">To actuation regulator (A)</div>
-    </button>
-    <button class="hotspot" slot="hotspot-bearings" data-position="0.065 0.11 -0.15" data-normal="0 0 -1">
-         <div class="annotation">To air-bearing regulator (B)</div>
-    </button>
-    <button class="hotspot" slot="hotspot-bottle1" data-position="0.17 0.10 0.06" data-normal="0 0 1">
-         <div class="annotation">Bottle 1.</div>
-    </button>
-    <button class="hotspot" slot="hotspot-bottle3" data-position="0.17 0.10 -0.06" data-normal="0 0 1">
-         <div class="annotation">Bottle 3.</div>
-    </button>
-    <button class="hotspot" slot="hotspot-bottle2" data-position="-0.17 0.195 0.0" data-normal="0 0 1">
-         <div class="annotation">Bottle 2.</div>
-    </button>
-    <button class="hotspot" slot="hotspot-reg-in" data-position="-0.035 0.075 0.16" data-normal="0 0 1">
-         <div class="annotation">From manifold (A)</div>
-    </button>
-    <button class="hotspot" slot="hotspot-reg-out" data-position="0.035 0.075 0.16" data-normal="0 0 1">
-         <div class="annotation">To actuation plate</div>
-    </button>
-    <button class="hotspot" slot="hotspot-bearing-reg-in" data-position="0.017 0.06 -0.16" data-normal="0 0 -1">
-         <div class="annotation">From manifold (B)</div>
-    </button>
-    <button class="hotspot" slot="hotspot-bearing-reg-out" data-position="-0.017 0.06 -0.16" data-normal="0 0 -1">
-         <div class="annotation">To air-bearing plate</div>
-    </button>
+			  alt="Bottom plate" 
+			  ar 
+			  camera-controls 
+			  shadow-intensity="1">
+	<button class="hotspot" slot="hotspot-frombottle1" data-position="0.075 0.223 -0.15" data-normal="0 0 -1">
+		 <div class="annotation">From bottle 1.</div>
+	</button>
+	<button class="hotspot" slot="hotspot-frombottle2" data-position="0.075 0.195 -0.15" data-normal="0 0 -1">
+		 <div class="annotation">From bottle 2.</div>
+	</button>
+	<button class="hotspot" slot="hotspot-frombottle3" data-position="0.075 0.169 -0.15" data-normal="0 0 -1">
+		 <div class="annotation">From bottle 3.</div>
+	</button>
+	<button class="hotspot" slot="hotspot-actuation" data-position="0.065 0.135 -0.15" data-normal="0 0 -1">
+		 <div class="annotation">To actuation regulator (A)</div>
+	</button>
+	<button class="hotspot" slot="hotspot-bearings" data-position="0.065 0.11 -0.15" data-normal="0 0 -1">
+		 <div class="annotation">To air-bearing regulator (B)</div>
+	</button>
+	<button class="hotspot" slot="hotspot-bottle1" data-position="0.17 0.10 0.06" data-normal="0 0 1">
+		 <div class="annotation">Bottle 1.</div>
+	</button>
+	<button class="hotspot" slot="hotspot-bottle3" data-position="0.17 0.10 -0.06" data-normal="0 0 1">
+		 <div class="annotation">Bottle 3.</div>
+	</button>
+	<button class="hotspot" slot="hotspot-bottle2" data-position="-0.17 0.195 0.0" data-normal="0 0 1">
+		 <div class="annotation">Bottle 2.</div>
+	</button>
+	<button class="hotspot" slot="hotspot-reg-in" data-position="-0.035 0.075 0.16" data-normal="0 0 1">
+		 <div class="annotation">From manifold (A)</div>
+	</button>
+	<button class="hotspot" slot="hotspot-reg-out" data-position="0.035 0.075 0.16" data-normal="0 0 1">
+		 <div class="annotation">To actuation plate</div>
+	</button>
+	<button class="hotspot" slot="hotspot-bearing-reg-in" data-position="0.017 0.06 -0.16" data-normal="0 0 -1">
+		 <div class="annotation">From manifold (B)</div>
+	</button>
+	<button class="hotspot" slot="hotspot-bearing-reg-out" data-position="-0.017 0.06 -0.16" data-normal="0 0 -1">
+		 <div class="annotation">To air-bearing plate</div>
+	</button>
 </model-viewer>
 </html>

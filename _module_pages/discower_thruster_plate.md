@@ -1,7 +1,9 @@
 ---
-title: Actuation Plate
+title: DISCOWER Thruster Plate
 author: Pedro Roque
 date: 2024-11-22
+order_no: -1
+nav_parent: actuation
 category: Jekyll
 layout: post
 ---
@@ -12,17 +14,17 @@ The second layer in the free-flyer is the actuation plate, a modular component t
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2. Middle Plate/2_d.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -34,17 +36,17 @@ First, start by cutting with a water jet the actuation support plate, item 0201 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2. Middle Plate/2_a.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -59,17 +61,17 @@ Then, we can waterjet the actuation plate that will host the thrusters. The DXF 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2. Middle Plate/2_b.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -86,17 +88,17 @@ At this stage, we are ready to assemble the thruster modules. We will provide in
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3. Thruster Modules/3_a.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -112,17 +114,17 @@ Then, we can install the first solenoid with the 4-to-2mm adapter, as well as th
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3. Thruster Modules/3_b.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -137,17 +139,17 @@ Then, we can install the second solenoid, on top of the first one, as shown in t
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3. Thruster Modules/3_c.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -162,17 +164,17 @@ Now we are ready to install the power and signal distribution PCB on the side of
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3. Thruster Modules/3_d.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -180,15 +182,15 @@ Now we are ready to install the power and signal distribution PCB on the side of
 The pictures below show the PCB's front and back, as well as the schematic view.
 <html>
 <a>
-     <img src="/assets/pcb/schematic.png" alt="Schematic" style="width: 100%; margin: 10px;">
-     <img src="/assets/pcb/front.png" alt="Schematic" style="width: 100%; margin: 10px;">
-     <img src="/assets/pcb/back.png" alt="Schematic" style="width: 100%; margin: 10px;">
+	<img src="/assets/pcb/schematic.png" alt="Schematic" style="width: 100%; margin: 10px;">
+	<img src="/assets/pcb/front.png" alt="Schematic" style="width: 100%; margin: 10px;">
+	<img src="/assets/pcb/back.png" alt="Schematic" style="width: 100%; margin: 10px;">
 </a>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -206,17 +208,17 @@ With the bottom part finished, we can now install the power regulator on the top
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3. Thruster Modules/3_e.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -232,17 +234,17 @@ The last step is to attach the top cover using M3 screws and nuts, as per the as
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/3. Thruster Modules/3_f.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
@@ -279,9 +281,9 @@ Below 3D view illustrates each thruster (T1-T8) and thruster module (M1-M4). Ref
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
     .hotspot{
     display: block;
@@ -310,48 +312,48 @@ Below 3D view illustrates each thruster (T1-T8) and thruster module (M1-M4). Ref
   }
 </style>
 <model-viewer src="/3D/2. Middle Plate/2_c.glb" 
-              alt="Bottom plate" 
-              ar 
-              camera-controls 
-              shadow-intensity="1">
-     <button class="hotspot" slot="hotspot-PWM-board" data-position="-0.01 0.33 0.021" data-normal="0 0 -1">
-          <div class="annotation">PWM1-PWM8</div>
-     </button>
-         <button class="hotspot" slot="hotspot-module-1" data-position="-0.1 0.36 -0.1" data-normal="0 0 -1">
-         <div class="annotation">M1</div>
+		    alt="Bottom plate" 
+		    ar 
+		    camera-controls 
+		    shadow-intensity="1">
+	<button class="hotspot" slot="hotspot-PWM-board" data-position="-0.01 0.33 0.021" data-normal="0 0 -1">
+		<div class="annotation">PWM1-PWM8</div>
+	</button>
+	    <button class="hotspot" slot="hotspot-module-1" data-position="-0.1 0.36 -0.1" data-normal="0 0 -1">
+	    <div class="annotation">M1</div>
     </button>
     <button class="hotspot" slot="hotspot-thruster-1" data-position="-0.08 0.3 -0.05" data-normal="0 0 -1">
-         <div class="annotation">T1</div>
+	    <div class="annotation">T1</div>
     </button>
     <button class="hotspot" slot="hotspot-thruster-7" data-position="-0.05 0.3 -0.08" data-normal="0 0 -1">
-         <div class="annotation">T7</div>
+	    <div class="annotation">T7</div>
     </button>
-     <button class="hotspot" slot="hotspot-module-2" data-position="0.1 0.36 -0.1" data-normal="0 0 -1">
-         <div class="annotation">M2</div>
+	<button class="hotspot" slot="hotspot-module-2" data-position="0.1 0.36 -0.1" data-normal="0 0 -1">
+	    <div class="annotation">M2</div>
     </button>
     <button class="hotspot" slot="hotspot-thruster-2" data-position="0.08 0.3 -0.05" data-normal="0 0 -1">
-         <div class="annotation">T2</div>
+	    <div class="annotation">T2</div>
     </button>
     <button class="hotspot" slot="hotspot-thruster-5" data-position="0.05 0.3 -0.08" data-normal="0 0 -1">
-         <div class="annotation">T5</div>
+	    <div class="annotation">T5</div>
     </button>
-        <button class="hotspot" slot="hotspot-module-3" data-position="-0.1 0.36 0.1" data-normal="0 0 -1">
-         <div class="annotation">M3</div>
+	   <button class="hotspot" slot="hotspot-module-3" data-position="-0.1 0.36 0.1" data-normal="0 0 -1">
+	    <div class="annotation">M3</div>
     </button>
-        <button class="hotspot" slot="hotspot-thruster-3" data-position="-0.08 0.3 0.05" data-normal="0 0 -1">
-         <div class="annotation">T3</div>
+	   <button class="hotspot" slot="hotspot-thruster-3" data-position="-0.08 0.3 0.05" data-normal="0 0 -1">
+	    <div class="annotation">T3</div>
     </button>
     <button class="hotspot" slot="hotspot-thruster-8" data-position="-0.05 0.3 0.08" data-normal="0 0 -1">
-         <div class="annotation">T8</div>
+	    <div class="annotation">T8</div>
     </button>
-        <button class="hotspot" slot="hotspot-module-4" data-position="0.1 0.36 0.1" data-normal="0 0 -1">
-         <div class="annotation">M4</div>
+	   <button class="hotspot" slot="hotspot-module-4" data-position="0.1 0.36 0.1" data-normal="0 0 -1">
+	    <div class="annotation">M4</div>
     </button>
-        <button class="hotspot" slot="hotspot-thruster-4" data-position="0.08 0.3 0.05" data-normal="0 0 -1">
-         <div class="annotation">T4</div>
+	   <button class="hotspot" slot="hotspot-thruster-4" data-position="0.08 0.3 0.05" data-normal="0 0 -1">
+	    <div class="annotation">T4</div>
     </button>
     <button class="hotspot" slot="hotspot-thruster-6" data-position="0.05 0.3 0.08" data-normal="0 0 -1">
-         <div class="annotation">T6</div>
+	    <div class="annotation">T6</div>
     </button>
 </model-viewer>
 </html>
@@ -364,9 +366,9 @@ With all thruster modules assembled, it is time to install them on the plate and
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
     .hotspot{
     display: block;
@@ -395,96 +397,96 @@ With all thruster modules assembled, it is time to install them on the plate and
   }
 </style>
 <model-viewer src="/3D/2. Middle Plate/2_c.glb" 
-              alt="Bottom plate" 
-              ar 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar  
+		    camera-controls 
+		    shadow-intensity="1">
     <button class="hotspot" slot="hotspot-from_manifold" data-position="0.055 0.295 0.0" data-normal="0 0 -1">
-         <div class="annotation">From manifold</div>
+	    <div class="annotation">From manifold</div>
     </button>
     <button class="hotspot" slot="hotspot-A_1" data-position="0.025 0.295 0.0" data-normal="0 0 -1">
-         <div class="annotation">A</div>
+	    <div class="annotation">A</div>
     </button>
     <button class="hotspot" slot="hotspot-A_2" data-position="0.015 0.295 0.0" data-normal="0 0 -1">
-         <div class="annotation">A</div>
+	    <div class="annotation">A</div>
     </button>
     <button class="hotspot" slot="hotspot-B_1" data-position="0.00 0.295 0.015" data-normal="0 0 -1">
-         <div class="annotation">B</div>
+	    <div class="annotation">B</div>
     </button>
     <button class="hotspot" slot="hotspot-B_2" data-position="0.00 0.295 0.105" data-normal="0 0 -1">
-         <div class="annotation">B</div>
+	    <div class="annotation">B</div>
     </button>
     <button class="hotspot" slot="hotspot-D1" data-position="-0.015 0.295 0.121" data-normal="0 0 -1">
-         <div class="annotation">C</div>
+	    <div class="annotation">C</div>
     </button>
     <button class="hotspot" slot="hotspot-D2" data-position="-0.06 0.297 0.119" data-normal="0 0 -1">
-         <div class="annotation">C</div>
+	    <div class="annotation">C</div>
     </button>
     <button class="hotspot" slot="hotspot-E1" data-position="0.015 0.295 0.121" data-normal="0 0 -1">
-         <div class="annotation">D</div>
+	    <div class="annotation">D</div>
     </button>
     <button class="hotspot" slot="hotspot-E2" data-position="0.07 0.297 0.121" data-normal="0 0 -1">
-         <div class="annotation">D</div>
+	    <div class="annotation">D</div>
     </button>
     <button class="hotspot" slot="hotspot-C1" data-position="0.00 0.295 -0.105" data-normal="0 0 -1">
-         <div class="annotation">E</div>
+	    <div class="annotation">E</div>
     </button>
     <button class="hotspot" slot="hotspot-C2" data-position="0.00 0.295 -0.015" data-normal="0 0 -1">
-         <div class="annotation">E</div>
+	    <div class="annotation">E</div>
     </button>
     <button class="hotspot" slot="hotspot-F1" data-position="-0.015 0.295 -0.121" data-normal="0 0 -1">
-         <div class="annotation">F</div>
+	    <div class="annotation">F</div>
     </button>
     <button class="hotspot" slot="hotspot-F2" data-position="-0.06 0.297 -0.119" data-normal="0 0 -1">
-         <div class="annotation">F</div>
+	    <div class="annotation">F</div>
     </button>
     <button class="hotspot" slot="hotspot-G1" data-position="0.015 0.295 -0.121" data-normal="0 0 -1">
-         <div class="annotation">G</div>
+	    <div class="annotation">G</div>
     </button>
     <button class="hotspot" slot="hotspot-G2" data-position="0.07 0.297 -0.121" data-normal="0 0 -1">
-         <div class="annotation">G</div>
+	    <div class="annotation">G</div>
     </button>
     <button class="hotspot" slot="hotspot-H1" data-position="0.04 0.295 0.015" data-normal="0 0 -1">
-         <div class="annotation">H</div>
+	    <div class="annotation">H</div>
     </button>
     <button class="hotspot" slot="hotspot-H2" data-position="-0.055 0.31 0.015" data-normal="0 0 -1">
-         <div class="annotation">H</div>
+	    <div class="annotation">H</div>
     </button>
     <button class="hotspot" slot="hotspot-I1" data-position="-0.07 0.31 0.0" data-normal="0 0 -1">
-         <div class="annotation">I</div>
+	    <div class="annotation">I</div>
     </button>
     <button class="hotspot" slot="hotspot-I2" data-position="-0.105 0.31 0.0" data-normal="0 0 -1">
-         <div class="annotation">I</div>
+	    <div class="annotation">I</div>
     </button>
     <button class="hotspot" slot="hotspot-J1" data-position="-0.12 0.31 -0.015" data-normal="0 0 -1">
-         <div class="annotation">J</div>
+	    <div class="annotation">J</div>
     </button>
     <button class="hotspot" slot="hotspot-J2" data-position="-0.12 0.31 -0.06" data-normal="0 0 -1">
-         <div class="annotation">J</div>
+	    <div class="annotation">J</div>
     </button>
     <button class="hotspot" slot="hotspot-K1" data-position="-0.12 0.31 0.015" data-normal="0 0 -1">
-         <div class="annotation">K</div>
+	    <div class="annotation">K</div>
     </button>
     <button class="hotspot" slot="hotspot-K2" data-position="-0.12 0.31 0.06" data-normal="0 0 -1">
-         <div class="annotation">K</div>
+	    <div class="annotation">K</div>
     </button>
     <button class="hotspot" slot="hotspot-L1" data-position="-0.044 0.31 0.0" data-normal="0 0 -1">
-         <div class="annotation">L</div>
+	    <div class="annotation">L</div>
     </button>
     <button class="hotspot" slot="hotspot-L2" data-position="0.105 0.31 0.0" data-normal="0 0 -1">
-         <div class="annotation">L</div>
+	    <div class="annotation">L</div>
     </button>
     <button class="hotspot" slot="hotspot-M1" data-position="0.12 0.31 0.015" data-normal="0 0 -1">
-         <div class="annotation">M</div>
+	    <div class="annotation">M</div>
     </button>
     <button class="hotspot" slot="hotspot-M2" data-position="0.13 0.31 0.06" data-normal="0 0 -1">
-         <div class="annotation">M</div>
+	    <div class="annotation">M</div>
     </button>
     <button class="hotspot" slot="hotspot-N1" data-position="0.12 0.31 -0.015" data-normal="0 0 -1">
-         <div class="annotation">N</div>
+	    <div class="annotation">N</div>
     </button>
     <button class="hotspot" slot="hotspot-N2" data-position="0.13 0.31 -0.06" data-normal="0 0 -1">
-         <div class="annotation">N</div>
+	    <div class="annotation">N</div>
     </button>
 </model-viewer>
 </html>
@@ -496,17 +498,17 @@ Lastly, install the aluminium profiles in the middle plate. Each aluminium profi
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/2. Middle Plate/2_d.glb" 
-              alt="Bottom plate" 
-              ar 
-              auto-rotate 
-              camera-controls 
-              shadow-intensity="1">
+		    alt="Bottom plate" 
+		    ar 
+		    auto-rotate 
+		    camera-controls 
+		    shadow-intensity="1">
 </model-viewer>
 <style>
     model-viewer {
-        width: 100%;
-        height: 500px;
-        background-color: var(background-color, #ffffff);
+	   width: 100%;
+	   height: 500px;
+	   background-color: var(background-color, #ffffff);
     }
 </style>
 </html>
