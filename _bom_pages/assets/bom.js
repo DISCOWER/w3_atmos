@@ -16,6 +16,7 @@
 
 	var configState = Object.assign({}, defaultModules);
 	var selectedAlternatives = Object.create(null);
+	var expandedItems = Object.create(null);
 	var selectedMarket = "all";
 	var regionInfo = {
 		EU: { icon: "🇪🇺", className: "eu", title: "EU item link" },
@@ -39,6 +40,7 @@
 			return {
 				name: alternative.name,
 				note: alternative.note || "",
+				components: alternative.components || [],
 				links: (alternative.links || []).map(function (link) {
 					return {
 						name: link.name,
@@ -54,7 +56,7 @@
 		var alternatives = productAlternatives(item);
 		var index = selectedAlternatives[item.id] || 0;
 		if (index >= alternatives.length) index = 0;
-		return { alternatives: alternatives, index: index, alternative: alternatives[index] || { links: [] } };
+		return { alternatives: alternatives, index: index, alternative: alternatives[index] || { links: [], components: [] } };
 	}
 
 	function alternativeCell(item, selection) {
@@ -103,16 +105,31 @@
 		return escapeHtml(item.quantity);
 	}
 
-	function rowHtml(item, selected) {
+	function componentsToggle(item, components) {
+		if (!components.length) return "";
+		var expanded = Boolean(expandedItems[item.id]);
+		return '<button type="button" class="bom-sub-toggle" data-item-id="' + escapeHtml(item.id) + '"' +
+			' aria-expanded="' + expanded + '">' + (expanded ? "Hide " : "Show ") + components.length +
+			(components.length === 1 ? " sub-item" : " sub-items") + '</button>';
+	}
+
+	function rowHtml(item, selected, isSub) {
 		var selection = selectionFor(item);
-		return '<tr class="' + (item.parent ? "bom-sub" : "") + '">' +
+		var components = selection.alternative.components;
+		var row = '<tr class="' + (isSub ? "bom-sub" : "") + '">' +
 			'<td class="bom-id">' + escapeHtml(item.id) + '</td>' +
 			'<td><span class="bom-item-name">' + escapeHtml(item.name) + '</span>' +
-			'<p class="bom-item-desc">' + escapeHtml(item.description) + '</p></td>' +
+			'<p class="bom-item-desc">' + escapeHtml(item.description) + '</p>' +
+			componentsToggle(item, components) + '</td>' +
 			'<td class="bom-qty">' + quantityCell(item) + '</td>' +
 			'<td>' + alternativeCell(item, selection) + '</td>' +
 			'<td>' + itemLinksCell(selection.alternative) + '</td>' +
 			'<td>' + moduleCell(item, selected) + '</td></tr>';
+		if (!expandedItems[item.id]) return row;
+		// Sub-items inherit category and modules from the item they belong to.
+		return row + components.map(function (component) {
+			return rowHtml(Object.assign({ category: item.category, modules: item.modules }, component), selected, true);
+		}).join("");
 	}
 
 	function render() {
@@ -175,6 +192,17 @@
 		if (!event.target.classList.contains("bom-alternative-select")) return;
 		selectedAlternatives[event.target.getAttribute("data-item-id")] = Number(event.target.value);
 		render();
+	});
+
+	document.getElementById("bom-results").addEventListener("click", function (event) {
+		var button = event.target.closest(".bom-sub-toggle");
+		if (!button) return;
+		var id = button.getAttribute("data-item-id");
+		expandedItems[id] = !expandedItems[id];
+		render();
+		Array.from(document.querySelectorAll("#bom-results .bom-sub-toggle")).forEach(function (toggle) {
+			if (toggle.getAttribute("data-item-id") === id) toggle.focus();
+		});
 	});
 
 	document.getElementById("bom-market").addEventListener("click", function (event) {
