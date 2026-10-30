@@ -1,5 +1,6 @@
 # Each product alternative can list multiple item links; use world when no EU/US-specific link is known.
 # quantity: number of units per platform (number or text, e.g. "2 m"); leave empty if unknown.
+# Sub-items that depend on a chosen alternative go under that alternative's components list; they inherit category and modules.
 categories:
   - Electronics
   - Mechanical
@@ -43,67 +44,103 @@ items:
     quantity: 1
     description: Onboard computer. There exist different options for carrier boards.
     alternatives:
-      - name: Standard
+      - name: SeedStudio Orin NX 16GB
         links:
-          - name: NVIDIA
+          - name: NVIDIA Jetson from SoM
             region: world
-            url: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
+        components:
+          - id: "0001a"
+            name: SeedStudio Orin NX 16GB
+            quantity: 1
+            description: reComputer J4012
+            alternatives:
+              - name: Standard
+                links:
+                  - name: reComputer J4012
+                    region: world
+                    url: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
 
-  - id: "0001a"
-    parent: "0001"
-    category: Electronics
-    modules: [discower-avionics]
-    name: Connect Tech Boson Carrier Board
-    quantity: 1
-    description: Carrier board for NVIDIA Orin Jetson NX
-    alternatives:
+          - id: "0001b"
+            name: Connect Tech Boson Carrier Board
+            quantity: 1
+            description: Carrier board for NVIDIA Orin Jetson NX
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Connect Tech
+                    region: world
+                    url: "https://connecttech.com/product/boson-for-framos-carrier-board-for-nvidia-jetson-orin-nx/"
+
+          - id: "0001c"
+            name: Kingston 500GB SSD
+            quantity: 1
+            description: SSD for storing the Operating System - other M2 NVMe should also be compatible
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Webhallen
+                    region: EU
+                    url: "https://www.webhallen.com/se/product/353791-Kingston-NV2-M-2-500GB"
+
       - name: Standard
         links:
-          - name: Connect Tech
+          - name: NVIDIA Jetson from SoM
             region: world
-            url: "https://connecttech.com/product/boson-for-framos-carrier-board-for-nvidia-jetson-orin-nx/"
+        components:
+          - id: "0001a"
+            name: Nvidia Orin NX 16GB Module
+            quantity: 1
+            description: 16GB module for NVIDIA Orin NX
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Orin NX 16GB Module
+                    region: world
+                    url: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
 
-  - id: "0001b"
-    parent: "0001"
-    category: Electronics
-    modules: [discower-avionics]
-    name: Ugreen USB Hub (2 USB-A and 2 USB-C)
-    quantity: 1
-    description: USB-C hub
-    alternatives:
-      - name: Standard
-        links:
-          - name: Teknikdelar
-            region: EU
-            url: "https://www.teknikdelar.se/produkt/ugreen-hub-usb-c-till-2x-usb-a-2-x-usb-c-20cm-gra"
+          - id: "0001b"
+            name: Connect Tech Boson Carrier Board
+            quantity: 1
+            description: Carrier board for NVIDIA Orin Jetson NX
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Connect Tech
+                    region: world
+                    url: "https://connecttech.com/product/boson-for-framos-carrier-board-for-nvidia-jetson-orin-nx/"
 
-  - id: "0001c"
-    parent: "0001"
-    category: Electronics
-    modules: [discower-avionics]
-    name: Intel 8265NGW WiFi Card
-    quantity: 1
-    description: WiFi 802.11ac/a/b/g/n card for Jetson Orin NX
-    alternatives:
-      - name: Standard
-        links:
-          - name: Fruugo
-            region: EU
-            url: "https://www.fruugo.se/dual-mode-ac8265-wireless-nic-module-support-24ghz5ghz-wifi-and-bluetooth-42-for-nano-kit/p-260936901-570900391"
+          - id: "0001c"
+            name: Ugreen USB Hub (2 USB-A and 2 USB-C)
+            quantity: 1
+            description: USB-C hub
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Teknikdelar
+                    region: EU
+                    url: "https://www.teknikdelar.se/produkt/ugreen-hub-usb-c-till-2x-usb-a-2-x-usb-c-20cm-gra"
+  
+          - id: "0001d"
+            name: Intel 8265NGW WiFi Card
+            quantity: 1
+            description: WiFi 802.11ac/a/b/g/n card for Jetson Orin NX
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Fruugo
+                    region: EU
+                    url: "https://www.fruugo.se/dual-mode-ac8265-wireless-nic-module-support-24ghz5ghz-wifi-and-bluetooth-42-for-nano-kit/p-260936901-570900391"
 
-  - id: "0001d"
-    parent: "0001"
-    category: Electronics
-    modules: [discower-avionics]
-    name: Kingston 500GB SSD
-    quantity: 1
-    description: SSD for storing the Operating System - other M2 NVMe should also be compatible
-    alternatives:
-      - name: Standard
-        links:
-          - name: Webhallen
-            region: EU
-            url: "https://www.webhallen.com/se/product/353791-Kingston-NV2-M-2-500GB"
+          - id: "0001e"
+            name: Kingston 500GB SSD
+            quantity: 1
+            description: SSD for storing the Operating System - other M2 NVMe should also be compatible
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Webhallen
+                    region: EU
+                    url: "https://www.webhallen.com/se/product/353791-Kingston-NV2-M-2-500GB"
 
   - id: "0002"
     category: Electronics

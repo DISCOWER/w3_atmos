@@ -74,7 +74,14 @@
 .bom-cat-mechanical th { border-left: 4px solid #b47a35; }
 .bom-cat-pneumatics th { border-left: 4px solid #496f9b; }
 .bom-category-count { float: right; color: var(--bom-muted); font-weight: 400; }
+.bom-table tr.bom-sub td { background: #fafbfb; }
 .bom-table tr.bom-sub td.bom-id { padding-left: 1.2em; }
+.bom-sub-toggle { margin-top: 0.4em; padding: 0.2em 0.5em; border: 1px solid var(--bom-line); border-radius: 3px;
+				background: #ffffff; color: var(--bom-green); cursor: pointer; font: inherit; font-size: 0.8em; }
+.bom-sub-toggle::before { content: "\25B8"; display: inline-block; margin-right: 0.35em; }
+.bom-sub-toggle[aria-expanded="true"]::before { transform: rotate(90deg); }
+.bom-sub-toggle:hover { border-color: var(--bom-green); background: var(--bom-green-soft); }
+.bom-sub-toggle:focus-visible { outline: 2px solid var(--bom-green); outline-offset: 2px; }
 .bom-alternative-select { width: 100%; min-width: 0; padding: 0.35em 1.8em 0.35em 0.45em;
 				border: 1px solid var(--bom-line); border-radius: 3px; background: #ffffff;
 				color: var(--bom-ink); font: inherit; font-size: 0.9em; }
@@ -118,7 +125,8 @@
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-reset-button,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-alternative-select,
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-market-button,
-.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-item-link {
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-item-link,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-sub-toggle {
 	border-color: #3b3f54;
 	background: #2d3143;
 	color: #bdcadb;
@@ -137,7 +145,8 @@
 	background: #1c1f2b;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-reset-button:hover,
-.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-item-link:hover {
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-item-link:hover,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-sub-toggle:hover {
 	border-color: #42b983;
 	background: #35394b;
 }
@@ -149,6 +158,9 @@
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-table tbody tr:not(.bom-cat):hover td {
 	background: #3b3f54;
 	color: #bdcadb;
+}
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-table tr.bom-sub td {
+	background: #23263a;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .bom-module-tag {
 	background: #3b3f54;
