@@ -181,7 +181,7 @@ Lastly, install the aluminium profiles in the middle plate. Each aluminium profi
 
 ### Motor Driver and CAN Bus
 
-Each motor is driven by its own VESC 6 EDU controller, for four VESCs in total. Connect the four VESCs to PX4 through a CAN hub with four outputs for the VESCs and one input from PX4. The Holybro CAN HUB listed in the BoM is one example; other hubs with the required connections can also be used.
+Each motor is driven by its own VESC 6 EDU controller, for four VESCs in total. Connect the four VESCs to PX4 through a CAN hub with four outputs for the VESCs and one input from PX4. The Holybro CAN HUB listed in the BOM is one example; other hubs with the required connections can also be used.
 
 ### Wiring Diagram
 

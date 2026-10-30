@@ -51,6 +51,9 @@ exclude:
   - MYREADME.md
 
 collections:
+  bom_pages:
+    output: true
+    permalink: /bom_pages/:path/
   module_pages:
     output: true
     permalink: /module_pages/:path/
@@ -62,9 +65,12 @@ collections:
     permalink: /:collection/:path/
 
 ordered_collections:
+  - bom_pages
   - module_pages
   - software_pages
   - others
+
+data_dir: _bom_pages/data
 
 page_width: 1000px
 

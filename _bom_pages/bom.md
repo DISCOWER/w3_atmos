@@ -1,5 +1,5 @@
 ---
-title: Bill of Materials (BoM)
+title: Bill of Materials (BOM)
 author: Pedro Roque, Elias Krantz, Prasetyo WL Sanjaya
 date: 2024-10-28
 order_no: 1
@@ -15,10 +15,10 @@ In this page we provide a list of materials used in the construction of the DISC
 
 ### Configuration
 
-Select your modules and item packs. The BoM table updates automatically.
+Select your modules and item packs. The BOM table updates automatically.
 
 <html>
-<link rel="stylesheet" href="{{ '/assets/css/bom.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/bom_pages/assets/bom.css' | relative_url }}">
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <div id="bom-config" class="bom-config" aria-label="Freeflyer configuration">
 {% for group in site.data.bom.configuration %}
@@ -47,7 +47,7 @@ Select your modules and item packs. The BoM table updates automatically.
 </div>
 </html>
 
-### BoM Table
+### BOM Table
 
 <html>
 <div class="bom-toolbar">
@@ -61,5 +61,5 @@ Select your modules and item packs. The BoM table updates automatically.
 </div>
 <div id="bom-results"></div>
 <script id="bom-data" type="application/json">{{ site.data.bom | jsonify }}</script>
-<script src="{{ '/assets/js/bom.js' | relative_url }}" defer></script>
+<script src="{{ '/bom_pages/assets/bom.js' | relative_url }}" defer></script>
 </html>
