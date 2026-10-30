@@ -60,7 +60,7 @@ collections:
   software_pages:
     output: true
     permalink: /software_pages/:path/
-  others:
+  misc_pages:
     output: true
     permalink: /:collection/:path/
 
@@ -68,7 +68,7 @@ ordered_collections:
   - bom_pages
   - module_pages
   - software_pages
-  - others
+  - misc_pages
 
 data_dir: _bom_pages/data
 
