@@ -1,4 +1,5 @@
 # Each product alternative can list multiple item links; use world when no EU/US-specific link is known.
+# quantity: number of units per platform (number or text, e.g. "2 m"); leave empty if unknown.
 categories:
   - Electronics
   - Mechanical
@@ -39,6 +40,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: NVIDIA Orin Jetson NX
+    quantity: 1
     description: Onboard computer. There exist different options for carrier boards.
     alternatives:
       - name: Standard
@@ -52,6 +54,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: Connect Tech Boson Carrier Board
+    quantity: 1
     description: Carrier board for NVIDIA Orin Jetson NX
     alternatives:
       - name: Standard
@@ -65,6 +68,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: Ugreen USB Hub (2 USB-A and 2 USB-C)
+    quantity: 1
     description: USB-C hub
     alternatives:
       - name: Standard
@@ -78,6 +82,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: Intel 8265NGW WiFi Card
+    quantity: 1
     description: WiFi 802.11ac/a/b/g/n card for Jetson Orin NX
     alternatives:
       - name: Standard
@@ -91,6 +96,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: Kingston 500GB SSD
+    quantity: 1
     description: SSD for storing the Operating System - other M2 NVMe should also be compatible
     alternatives:
       - name: Standard
@@ -103,6 +109,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: Pixhawk 6X Mini
+    quantity: 1
     description: Low-level controller
     alternatives:
       - name: Standard
@@ -115,6 +122,7 @@ items:
     category: Electronics
     modules: [discower-thruster]
     name: Buck Boost DC-DC Converter to 24V >100W
+    quantity:
     description: DC/DC converter for thruster solenoid valves. Requires at least 96W output at 24V.
     alternatives:
       - name: Standard
@@ -127,6 +135,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: Buck Converter Module, DC Voltage Step Down
+    quantity:
     description: Adjustable DC voltage regulator
     alternatives:
       - name: Standard
@@ -139,6 +148,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: 6S Lipo Battery
+    quantity:
     description: 10Ah Lipo battery 6S with XT60 connector
     alternatives:
       - name: Standard
@@ -148,6 +158,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: On-Off Power Switch
+    quantity: 1
     description: Manual power switch
     alternatives:
       - name: Standard
@@ -160,6 +171,7 @@ items:
     category: Electronics
     modules: [general]
     name: XT60 Power Cables
+    quantity:
     description: Power Cables with XT60 connectors
     alternatives:
       - name: Standard
@@ -169,6 +181,7 @@ items:
     category: Electronics
     modules: [general]
     name: XT60 Tarot Power Distribution Module
+    quantity: 1
     description: Power distribution module for XT60
     alternatives:
       - name: Standard
@@ -181,6 +194,7 @@ items:
     category: Electronics
     modules: [discower-avionics]
     name: RC Receiver/Remote
+    quantity: 1
     description: RC receiver and remote compatible with PX4
     alternatives:
       - name: Standard
@@ -193,6 +207,7 @@ items:
     category: Electronics
     modules: [discower-thruster]
     name: Adafruit Feather Proto
+    quantity:
     description: PCB for Signal and Power Distribution
     alternatives:
       - name: Standard
@@ -205,6 +220,7 @@ items:
     category: Electronics
     modules: [discower-thruster]
     name: Wire-to-PCB Blocks
+    quantity:
     description: Wire-to-PCB Blocks, 2P and 3P with 5mm pitch.
     alternatives:
       - name: Standard
@@ -217,6 +233,7 @@ items:
     category: Electronics
     modules: [discower-prop]
     name: Holybro CAN HUB
+    quantity: 1
     description: CAN bus hub for aggregating VESC CAN lines to PX4
     alternatives:
       - name: Standard
@@ -229,6 +246,7 @@ items:
     category: Electronics
     modules: [discower-prop]
     name: Velox V2208 V2 BLDC Motor
+    quantity:
     description: Brushless DC motor for propeller plate
     alternatives:
       - name: Standard
@@ -241,6 +259,7 @@ items:
     category: Electronics
     modules: [discower-prop]
     name: VESC 6 EDU
+    quantity:
     description: Brushless motor controller with CAN bus output
     alternatives:
       - name: Standard
@@ -253,6 +272,7 @@ items:
     category: Mechanical
     modules: [general]
     name: Polycarbonate plate, 8 mm thickness
+    quantity:
     description: Polycarbonate structural baseplates
     alternatives:
       - name: Standard
@@ -265,6 +285,7 @@ items:
     category: Mechanical
     modules: [general]
     name: Aluminium Profile, 20x20 mm with 5 mm groove
+    quantity:
     description: Aluminium strut profile structure
     alternatives:
       - name: Standard
@@ -277,6 +298,7 @@ items:
     category: Mechanical
     modules: [discower-base]
     name: Ball Mounting Screws
+    quantity:
     description: Air bearing ball mounting screws 13 mm Dia. / M10x.75 x 54 mm, S8013B06
     alternatives:
       - name: Standard
@@ -289,6 +311,7 @@ items:
     category: Mechanical
     modules: [discower-base]
     name: Ball Retaining Clips
+    quantity:
     description: Air bearing 13 mm Ball retainer, S8013S01
     alternatives:
       - name: Standard
@@ -301,6 +324,7 @@ items:
     category: Mechanical
     modules: [general]
     name: Angle Bracket, Strut Profile 20 mm
+    quantity:
     description: Angle bracket for strut profile 20 mm
     alternatives:
       - name: Standard
@@ -313,6 +337,7 @@ items:
     category: Mechanical
     modules: [general]
     name: M4 T-Slot Nut, Strut Profile 20 mm
+    quantity:
     description: M4 T-Slot Nut Connecting Component, Strut Profile 20 mm, Groove Size 5mm
     alternatives:
       - name: Standard
@@ -325,6 +350,7 @@ items:
     category: Mechanical
     modules: [general]
     name: Standoff, M5 Thread, 20mm
+    quantity:
     description: Standoffs for baseplates
     alternatives:
       - name: Standard
@@ -337,6 +363,7 @@ items:
     category: Mechanical
     modules: [general]
     name: Miscellaneous screws, nuts and washers
+    quantity:
     description: Sizes M3, M4 and M5. Screws of lengths 8 mm, 16 mm, 20 mm, and 25 mm
     alternatives:
       - name: Standard
@@ -346,6 +373,7 @@ items:
     category: Mechanical
     modules: [discower-prop]
     name: Gemfan 3545 Propeller
+    quantity:
     description: '3.5" x 4.5" 2-blade bull nose propeller, glass reinforced nylon, 5mm hub'
     alternatives:
       - name: Standard
@@ -358,6 +386,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Dye Armotech Core Air Tank, 1.5 L
+    quantity:
     description: Air tanks of 1.5 L with 300 bar operating pressure
     alternatives:
       - name: Standard
@@ -370,6 +399,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Tank regulator, step 1
+    quantity:
     description: Air tank regulator, step 1, output 60 bar
     alternatives:
       - name: Ninja Pro V3 4500 PSI (Recommended)
@@ -387,6 +417,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Polarstar micro MR GEN2 Regulator
+    quantity:
     description: Air tank regulator, step 2, adjustable output
     alternatives:
       - name: Standard
@@ -399,6 +430,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Polarstar Male Quick Disconnect Fitting
+    quantity:
     description: Fitting for Polarstar regulator
     alternatives:
       - name: Standard
@@ -411,6 +443,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: 50 mm Flat Round Air Bearing
+    quantity:
     description: Flat air bearings
     alternatives:
       - name: Standard
@@ -423,6 +456,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Festo Pressure regulator MS2-LR-QS6-D6-AR-BAR-B
+    quantity:
     description: Pressure regulator for air bearings
     alternatives:
       - name: Standard
@@ -435,6 +469,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Festo Pressure regulator MS4-LR-1/4-D7-AS
+    quantity:
     description: Pressure regulator for thrusters
     alternatives:
       - name: Standard
@@ -447,6 +482,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Festo Push-in fitting QS-G1/4-6
+    quantity:
     description: Push in fitting for regulator MS4-LR-1/4-D7-AS
     alternatives:
       - name: Standard
@@ -459,6 +495,7 @@ items:
     category: Pneumatics
     modules: [discower-thruster]
     name: Festo Solenoid Valve MHJ10-S-2,5-QS-6-HF
+    quantity:
     description: Solenoid valve for thruster pulse control
     alternatives:
       - name: Standard
@@ -471,6 +508,7 @@ items:
     category: Pneumatics
     modules: [general]
     name: Festo Plastic Tubing PEN-6X1-BL
+    quantity:
     description: 6/4 mm tubing
     alternatives:
       - name: Standard
@@ -483,6 +521,7 @@ items:
     category: Pneumatics
     modules: [discower-thruster]
     name: Legris Plastic Tubing 4 mm
+    quantity:
     description: 4/2 mm tubing for nozzles
     alternatives:
       - name: Standard
@@ -495,6 +534,7 @@ items:
     category: Pneumatics
     modules: [discower-thruster]
     name: Festo Push-in T-connector QSMT-6
+    quantity:
     description: T-connector 6 mm
     alternatives:
       - name: Standard
@@ -507,6 +547,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Festo Push-in Y-connector QSY-6
+    quantity:
     description: Y-connector 6 mm
     alternatives:
       - name: Standard
@@ -519,6 +560,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Festo Push-in X-connector QSMX-6
+    quantity:
     description: X-connector 6 mm
     alternatives:
       - name: Standard
@@ -531,6 +573,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Festo Ball Valve QH-QS-6
+    quantity:
     description: Manual shut-off valve
     alternatives:
       - name: Standard
@@ -543,6 +586,7 @@ items:
     category: Pneumatics
     modules: [discower-thruster]
     name: Festo Push-in connector QSM-6-4
+    quantity:
     description: 6 mm to 4 mm tubing connector
     alternatives:
       - name: Standard
@@ -555,6 +599,7 @@ items:
     category: Pneumatics
     modules: [discower-base]
     name: Festo Push-in connector QSM-M5-6-I
+    quantity:
     description: M5 thread to 6mm push-in tubing connector
     alternatives:
       - name: Standard

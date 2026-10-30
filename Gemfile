@@ -11,3 +11,8 @@ gem 'jekyll-remote-theme'
 gem 'webrick'
 
 # gem "rails"
+
+gem "csv", "~> 3.3"
+gem "base64", "~> 0.2.0"
+gem "bigdecimal", "~> 3.1"
+gem "logger", "~> 1.6"
