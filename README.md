@@ -36,6 +36,11 @@ Here you can see the 3D platform used in DISCOWER. In this website, we provide d
 
 ### Changelog
 The latest changes to the documentation can be found below:
+- **2026-10-30**:
+  - Added the DISCOWER Propeller Plate as an alternative actuation option, with mechanical, wiring, and software build instructions. The page is marked as a work in progress while the polycarbonate plate is finalized.
+  - Reworked the Bill of Materials so users can select a module configuration and market (EU or US), with alternative parts and multiple supplier links. BOM entries are now maintained in `bom.yml`.
+  - Reorganized module, software, BOM, and miscellaneous documentation into separate sections with manually controlled navigation order. Added an Actuation Plate overview for choosing between options.
+  - Updated PX4 DDS topics and rates to reduce ROS 2 network traffic.
 - **2026-03-06**: 
   - Added MIT and UIUC to ATMOS-supported institutions
   - Updated Bill-of-Materials part 0212 with the correct version of the Festo Push-in T-connector (QSMT-6 instead of QST-6)

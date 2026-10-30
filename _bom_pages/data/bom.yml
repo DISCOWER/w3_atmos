@@ -1,0 +1,646 @@
+# Each product alternative can list multiple item links; use world when no EU/US-specific link is known.
+# quantity: number of units per platform (number or text, e.g. "2 m"); leave empty if unknown.
+# Sub-items that depend on a chosen alternative go under that alternative's components list; they inherit category and modules.
+categories:
+  - Electronics
+  - Mechanical
+  - Pneumatics
+
+configuration:
+  - title: Base plates
+    choices:
+      - id: discower-base
+        label: DISCOWER base plate
+        model: /3D/1.%20Bottom%20Plate/1_f.glb
+        default: true
+  - title: Actuation plates
+    choices:
+      - id: discower-thruster
+        label: DISCOWER thruster plate
+        model: /3D/2.%20Middle%20Plate/2_d.glb
+        default: true
+      - id: discower-prop
+        label: DISCOWER propeller plate
+        model: /3D/2.1%20Middle%20Plate%20Propeller/2_1_a.glb
+        default: false
+  - title: Avionics plates
+    choices:
+      - id: discower-avionics
+        label: DISCOWER avionics plate
+        model: /3D/4.%20Top%20Plate/4_f.glb
+        default: true
+  - title: Shared items
+    choices:
+      - id: general
+        label: General
+        icon: "📦"
+        default: true
+
+items:
+  - id: "0001"
+    category: Electronics
+    modules: [discower-avionics]
+    name: NVIDIA Orin Jetson NX
+    quantity: 1
+    description: Onboard computer. There exist different options for carrier boards.
+    alternatives:
+      - name: SeedStudio Orin NX 16GB
+        links:
+          - name: NVIDIA Jetson from SoM
+            region: world
+        components:
+          - id: "0001a"
+            name: SeedStudio Orin NX 16GB
+            quantity: 1
+            description: reComputer J4012
+            alternatives:
+              - name: Standard
+                links:
+                  - name: reComputer J4012
+                    region: world
+                    url: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
+
+          - id: "0001b"
+            name: Connect Tech Boson Carrier Board
+            quantity: 1
+            description: Carrier board for NVIDIA Orin Jetson NX
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Connect Tech
+                    region: world
+                    url: "https://connecttech.com/product/boson-for-framos-carrier-board-for-nvidia-jetson-orin-nx/"
+
+          - id: "0001c"
+            name: Kingston 500GB SSD
+            quantity: 1
+            description: SSD for storing the Operating System - other M2 NVMe should also be compatible
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Webhallen
+                    region: EU
+                    url: "https://www.webhallen.com/se/product/353791-Kingston-NV2-M-2-500GB"
+
+      - name: Standard
+        links:
+          - name: NVIDIA Jetson from SoM
+            region: world
+        components:
+          - id: "0001a"
+            name: Nvidia Orin NX 16GB Module
+            quantity: 1
+            description: 16GB module for NVIDIA Orin NX
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Orin NX 16GB Module
+                    region: world
+                    url: "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/"
+
+          - id: "0001b"
+            name: Connect Tech Boson Carrier Board
+            quantity: 1
+            description: Carrier board for NVIDIA Orin Jetson NX
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Connect Tech
+                    region: world
+                    url: "https://connecttech.com/product/boson-for-framos-carrier-board-for-nvidia-jetson-orin-nx/"
+
+          - id: "0001c"
+            name: Ugreen USB Hub (2 USB-A and 2 USB-C)
+            quantity: 1
+            description: USB-C hub
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Teknikdelar
+                    region: EU
+                    url: "https://www.teknikdelar.se/produkt/ugreen-hub-usb-c-till-2x-usb-a-2-x-usb-c-20cm-gra"
+  
+          - id: "0001d"
+            name: Intel 8265NGW WiFi Card
+            quantity: 1
+            description: WiFi 802.11ac/a/b/g/n card for Jetson Orin NX
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Fruugo
+                    region: EU
+                    url: "https://www.fruugo.se/dual-mode-ac8265-wireless-nic-module-support-24ghz5ghz-wifi-and-bluetooth-42-for-nano-kit/p-260936901-570900391"
+
+          - id: "0001e"
+            name: Kingston 500GB SSD
+            quantity: 1
+            description: SSD for storing the Operating System - other M2 NVMe should also be compatible
+            alternatives:
+              - name: Standard
+                links:
+                  - name: Webhallen
+                    region: EU
+                    url: "https://www.webhallen.com/se/product/353791-Kingston-NV2-M-2-500GB"
+
+  - id: "0002"
+    category: Electronics
+    modules: [discower-avionics]
+    name: Pixhawk 6X Mini
+    quantity: 1
+    description: Low-level controller
+    alternatives:
+      - name: Standard
+        links:
+          - name: Holybro
+            region: world
+            url: "https://holybro.com/products/pixhawk-6x?variant=44399078768829"
+
+  - id: "0003"
+    category: Electronics
+    modules: [discower-thruster]
+    name: Buck Boost DC-DC Converter to 24V >100W
+    quantity:
+    description: DC/DC converter for thruster solenoid valves. Requires at least 96W output at 24V.
+    alternatives:
+      - name: Standard
+        links:
+          - name: Amazon
+            region: world
+            url: "https://a.co/d/hgXubyN"
+
+  - id: "0004"
+    category: Electronics
+    modules: [discower-avionics]
+    name: Buck Converter Module, DC Voltage Step Down
+    quantity:
+    description: Adjustable DC voltage regulator
+    alternatives:
+      - name: Standard
+        links:
+          - name: Amazon
+            region: EU
+            url: "https://amzn.eu/d/5HJ4z21"
+
+  - id: "0005"
+    category: Electronics
+    modules: [discower-avionics]
+    name: 6S Lipo Battery
+    quantity:
+    description: 10Ah Lipo battery 6S with XT60 connector
+    alternatives:
+      - name: Standard
+        links: []
+
+  - id: "0006"
+    category: Electronics
+    modules: [discower-avionics]
+    name: On-Off Power Switch
+    quantity: 1
+    description: Manual power switch
+    alternatives:
+      - name: Standard
+        links:
+          - name: RS Online
+            region: EU
+            url: "https://se.rs-online.com/web/p/cam-switches/2714164"
+
+  - id: "0007"
+    category: Electronics
+    modules: [general]
+    name: XT60 Power Cables
+    quantity:
+    description: Power Cables with XT60 connectors
+    alternatives:
+      - name: Standard
+        links: []
+
+  - id: "0008"
+    category: Electronics
+    modules: [general]
+    name: XT60 Tarot Power Distribution Module
+    quantity: 1
+    description: Power distribution module for XT60
+    alternatives:
+      - name: Standard
+        links:
+          - name: Tarot
+            region: world
+            url: "http://www.tarotrc.com/Product/Detail.aspx?Lang=en&Id=f6a32e2d-7978-4ef2-b018-ccd127e8c25d"
+
+  - id: "0009"
+    category: Electronics
+    modules: [discower-avionics]
+    name: RC Receiver/Remote
+    quantity: 1
+    description: RC receiver and remote compatible with PX4
+    alternatives:
+      - name: Standard
+        links:
+          - name: PX4 Docs
+            region: world
+            url: "https://docs.px4.io/main/en/getting_started/rc_transmitter_receiver.html"
+
+  - id: "0010"
+    category: Electronics
+    modules: [discower-thruster]
+    name: Adafruit Feather Proto
+    quantity:
+    description: PCB for Signal and Power Distribution
+    alternatives:
+      - name: Standard
+        links:
+          - name: Adafruit
+            region: world
+            url: "https://www.adafruit.com/product/2884"
+
+  - id: "0011"
+    category: Electronics
+    modules: [discower-thruster]
+    name: Wire-to-PCB Blocks
+    quantity:
+    description: Wire-to-PCB Blocks, 2P and 3P with 5mm pitch.
+    alternatives:
+      - name: Standard
+        links:
+          - name: Amazon
+            region: EU
+            url: "https://www.amazon.nl/-/en/YIXISI-Terminal-Connector-Mounting-Arduino/dp/B082ZNRQMJ?th=1"
+
+  - id: "0012"
+    category: Electronics
+    modules: [discower-prop]
+    name: Holybro CAN HUB
+    quantity: 1
+    description: CAN bus hub for aggregating VESC CAN lines to PX4
+    alternatives:
+      - name: Standard
+        links:
+          - name: Holybro
+            region: world
+            url: "https://holybro.com/products/can-hub"
+
+  - id: "0013"
+    category: Electronics
+    modules: [discower-prop]
+    name: Velox V2208 V2 BLDC Motor
+    quantity:
+    description: Brushless DC motor for propeller plate
+    alternatives:
+      - name: Standard
+        links:
+          - name: T-Hobby
+            region: world
+            url: "https://www.t-hobby.com/products/fpv-brushless-motor-v2208-v2-for-freestyle-drones?variant=0175cb64-e358-43de-bfa5-cd86da11b202"
+
+  - id: "0014"
+    category: Electronics
+    modules: [discower-prop]
+    name: VESC 6 EDU
+    quantity:
+    description: Brushless motor controller with CAN bus output
+    alternatives:
+      - name: Standard
+        links:
+          - name: Trampa Boards
+            region: world
+            url: "https://trampaboards.com/vesc-six-education--with-imu-p-34332.html"
+
+  - id: "0101"
+    category: Mechanical
+    modules: [general]
+    name: Polycarbonate plate, 8 mm thickness
+    quantity:
+    description: Polycarbonate structural baseplates
+    alternatives:
+      - name: Standard
+        links:
+          - name: RS Online
+            region: EU
+            url: "https://se.rs-online.com/web/p/plastic-sheets/2586629"
+
+  - id: "0102"
+    category: Mechanical
+    modules: [general]
+    name: Aluminium Profile, 20x20 mm with 5 mm groove
+    quantity:
+    description: Aluminium strut profile structure
+    alternatives:
+      - name: Standard
+        links:
+          - name: RS Online
+            region: EU
+            url: "https://se.rs-online.com/web/p/tubing-and-profile-struts/8508489"
+
+  - id: "0103"
+    category: Mechanical
+    modules: [discower-base]
+    name: Ball Mounting Screws
+    quantity:
+    description: Air bearing ball mounting screws 13 mm Dia. / M10x.75 x 54 mm, S8013B06
+    alternatives:
+      - name: Standard
+        links:
+          - name: New Way Air Bearings
+            region: world
+            url: "https://www.newwayairbearings.com/catalog/product/13mm-diameter-ball-mounting-screws-round-end/"
+
+  - id: "0104"
+    category: Mechanical
+    modules: [discower-base]
+    name: Ball Retaining Clips
+    quantity:
+    description: Air bearing 13 mm Ball retainer, S8013S01
+    alternatives:
+      - name: Standard
+        links:
+          - name: New Way Air Bearings
+            region: world
+            url: "https://www.newwayairbearings.com/catalog/product/13mm-ball-retaining-clips/"
+
+  - id: "0105"
+    category: Mechanical
+    modules: [general]
+    name: Angle Bracket, Strut Profile 20 mm
+    quantity:
+    description: Angle bracket for strut profile 20 mm
+    alternatives:
+      - name: Standard
+        links:
+          - name: RS Online
+            region: EU
+            url: "https://se.rs-online.com/web/p/connecting-components/1809136"
+
+  - id: "0106"
+    category: Mechanical
+    modules: [general]
+    name: M4 T-Slot Nut, Strut Profile 20 mm
+    quantity:
+    description: M4 T-Slot Nut Connecting Component, Strut Profile 20 mm, Groove Size 5mm
+    alternatives:
+      - name: Standard
+        links:
+          - name: RS Online
+            region: EU
+            url: "https://se.rs-online.com/web/p/connecting-components/1809106"
+
+  - id: "0107"
+    category: Mechanical
+    modules: [general]
+    name: Standoff, M5 Thread, 20mm
+    quantity:
+    description: Standoffs for baseplates
+    alternatives:
+      - name: Standard
+        links:
+          - name: RS Online
+            region: EU
+            url: "https://se.rs-online.com/web/p/standoffs/2053072"
+
+  - id: "0108"
+    category: Mechanical
+    modules: [general]
+    name: Miscellaneous screws, nuts and washers
+    quantity:
+    description: Sizes M3, M4 and M5. Screws of lengths 8 mm, 16 mm, 20 mm, and 25 mm
+    alternatives:
+      - name: Standard
+        links: []
+
+  - id: "0109"
+    category: Mechanical
+    modules: [discower-prop]
+    name: Gemfan 3545 Propeller
+    quantity:
+    description: '3.5" x 4.5" 2-blade bull nose propeller, glass reinforced nylon, 5mm hub'
+    alternatives:
+      - name: Standard
+        links:
+          - name: HobbyKing
+            region: World
+            url: "https://hobbyking.com/en_us/gemfan-bull-nose-3545-grp-nylon-propellers-cw-ccw-set-black-2-pairs.html"
+
+  - id: "0201"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Dye Armotech Core Air Tank, 1.5 L
+    quantity:
+    description: Air tanks of 1.5 L with 300 bar operating pressure
+    alternatives:
+      - name: Standard
+        links:
+          - name: Tacticalstore
+            region: EU
+            url: "https://www.tacticalstore.se/en/brands/dye-paintball/dye-armotech-core-air-tank-1-5l-90-4500"
+
+  - id: "0202"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Tank regulator, step 1
+    quantity:
+    description: Air tank regulator, step 1, output 60 bar
+    alternatives:
+      - name: Ninja Pro V3 4500 PSI (Recommended)
+        links:
+          - name: Tacticalstore
+            region: EU
+            url: "https://www.tacticalstore.se/en/paintball/air-systems-co2/regulators/ninja-regulator-pro-v3-4500psi-hp/"
+      - name: DYE LT Throttle Regulator 300 Bar
+        links:
+          - name: Tacticalstore
+            region: EU
+            url: "https://www.tacticalstore.se/en/paintball/air-systems-co2/regulators/dye-lt-throttle-regulator-300-bar-4500psi"
+
+  - id: "0203"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Polarstar micro MR GEN2 Regulator
+    quantity:
+    description: Air tank regulator, step 2, adjustable output
+    alternatives:
+      - name: Standard
+        links:
+          - name: Powair6
+            region: world
+            url: "https://www.powair6.com/en/hpa-regulator/10928-polarstar-micro-mr-gen2-regulator.html"
+
+  - id: "0204"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Polarstar Male Quick Disconnect Fitting
+    quantity:
+    description: Fitting for Polarstar regulator
+    alternatives:
+      - name: Standard
+        links:
+          - name: Polarstar
+            region: world
+            url: "https://polarstarairsoft.com/products/male-qd-fitting-assembly"
+
+  - id: "0205"
+    category: Pneumatics
+    modules: [discower-base]
+    name: 50 mm Flat Round Air Bearing
+    quantity:
+    description: Flat air bearings
+    alternatives:
+      - name: Standard
+        links:
+          - name: New Way Air Bearings
+            region: world
+            url: "https://www.newwayairbearings.com/catalog/product/50mm-flat-round-air-bearings/"
+
+  - id: "0206"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Festo Pressure regulator MS2-LR-QS6-D6-AR-BAR-B
+    quantity:
+    description: Pressure regulator for air bearings
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/8086638/"
+
+  - id: "0207"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Festo Pressure regulator MS4-LR-1/4-D7-AS
+    quantity:
+    description: Pressure regulator for thrusters
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/529419/"
+
+  - id: "0208"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Festo Push-in fitting QS-G1/4-6
+    quantity:
+    description: Push in fitting for regulator MS4-LR-1/4-D7-AS
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/186097/"
+
+  - id: "0209"
+    category: Pneumatics
+    modules: [discower-thruster]
+    name: Festo Solenoid Valve MHJ10-S-2,5-QS-6-HF
+    quantity:
+    description: Solenoid valve for thruster pulse control
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/567503/"
+
+  - id: "0210"
+    category: Pneumatics
+    modules: [general]
+    name: Festo Plastic Tubing PEN-6X1-BL
+    quantity:
+    description: 6/4 mm tubing
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/551457/"
+
+  - id: "0211"
+    category: Pneumatics
+    modules: [discower-thruster]
+    name: Legris Plastic Tubing 4 mm
+    quantity:
+    description: 4/2 mm tubing for nozzles
+    alternatives:
+      - name: Standard
+        links:
+          - name: RS Online
+            region: EU
+            url: "https://se.rs-online.com/web/p/air-hoses/1447836"
+
+  - id: "0212"
+    category: Pneumatics
+    modules: [discower-thruster]
+    name: Festo Push-in T-connector QSMT-6
+    quantity:
+    description: T-connector 6 mm
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/153367/"
+
+  - id: "0213"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Festo Push-in Y-connector QSY-6
+    quantity:
+    description: Y-connector 6 mm
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/153149/"
+
+  - id: "0214"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Festo Push-in X-connector QSMX-6
+    quantity:
+    description: X-connector 6 mm
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/153380/"
+
+  - id: "0215"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Festo Ball Valve QH-QS-6
+    quantity:
+    description: Manual shut-off valve
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/153484/"
+
+  - id: "0216"
+    category: Pneumatics
+    modules: [discower-thruster]
+    name: Festo Push-in connector QSM-6-4
+    quantity:
+    description: 6 mm to 4 mm tubing connector
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/153327/"
+
+  - id: "0217"
+    category: Pneumatics
+    modules: [discower-base]
+    name: Festo Push-in connector QSM-M5-6-I
+    quantity:
+    description: M5 thread to 6mm push-in tubing connector
+    alternatives:
+      - name: Standard
+        links:
+          - name: Festo
+            region: world
+            url: "https://www.festo.com/us/en/a/153317/"

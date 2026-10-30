@@ -5,10 +5,10 @@
     <head>
         {%- include head.html -%}
 
-        {% assign reversed_posts = site.posts | reverse %}
+        {% assign ordered_posts = site.module_pages | where_exp: "item", "item.order_no >= 0" | sort: "order_no" %}
 
-        {% if reversed_posts %}
-            <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
+        {% if ordered_posts %}
+            <link rel="next" href="{{site.baseurl}}{{ordered_posts.first.url}}" />
         {% endif %}
     </head>
     <body>
