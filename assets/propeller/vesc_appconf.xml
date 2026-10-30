@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <APPConfiguration>
     <ConfigVersion>4</ConfigVersion>
-    <controller_id>43</controller_id>
+    <controller_id>2</controller_id>
     <timeout_msec>1000</timeout_msec>
     <timeout_brake_current>0</timeout_brake_current>
     <can_status_rate_1>50</can_status_rate_1>
@@ -12,14 +12,14 @@
     <pairing_done>0</pairing_done>
     <permanent_uart_enabled>1</permanent_uart_enabled>
     <shutdown_mode>7</shutdown_mode>
-    <can_mode>0</can_mode>
-    <uavcan_esc_index>0</uavcan_esc_index>
-    <uavcan_raw_mode>0</uavcan_raw_mode>
-    <uavcan_raw_rpm_max>50000</uavcan_raw_rpm_max>
+    <can_mode>1</can_mode>
+    <uavcan_esc_index>1</uavcan_esc_index>
+    <uavcan_raw_mode>3</uavcan_raw_mode>
+    <uavcan_raw_rpm_max>180000</uavcan_raw_rpm_max>
     <uavcan_status_current_mode>0</uavcan_status_current_mode>
     <servo_out_enable>0</servo_out_enable>
     <kill_sw_mode>0</kill_sw_mode>
-    <app_to_use>1</app_to_use>
+    <app_to_use>0</app_to_use>
     <app_ppm_conf.ctrl_type>6</app_ppm_conf.ctrl_type>
     <app_ppm_conf.pid_max_erpm>185000</app_ppm_conf.pid_max_erpm>
     <app_ppm_conf.hyst>0.02</app_ppm_conf.hyst>

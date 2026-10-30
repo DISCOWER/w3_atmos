@@ -98,7 +98,7 @@ Once QGroundControl is installed, follow these steps:
    - Navigate to **Vehicle Setup**.
 
 2. **Calibrate the RC (First-time Setup)**
-   - Go to Airframe and select **Spacecraft** as the vehicle type, followed by "KTH ATMOS Freeflyer". QGroundControl will prompt you to reboot PX4.
+   - Go to Airframe and select Free-flyer as the vehicle type, and select “KTH-ATMOS” as airframe. QGroundControl will prompt you to reboot PX4.
    - Go to the **Radio** tab and follow the calibration procedure.
    - Go to the **Flight Modes** tab and assign flight modes to RC switches:
      - One switch for ARMING/DISARMING.

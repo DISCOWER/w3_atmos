@@ -72,16 +72,16 @@
     <foc_duty_dowmramp_ki>1000</foc_duty_dowmramp_ki>
     <foc_start_curr_dec>1</foc_start_curr_dec>
     <foc_start_curr_dec_rpm>4000</foc_start_curr_dec_rpm>
-    <foc_openloop_rpm>500</foc_openloop_rpm>
+    <foc_openloop_rpm>1000</foc_openloop_rpm>
     <foc_openloop_rpm_low>0.1</foc_openloop_rpm_low>
     <foc_d_gain_scale_start>0.9</foc_d_gain_scale_start>
     <foc_d_gain_scale_max_mod>0.2</foc_d_gain_scale_max_mod>
     <foc_sl_openloop_hyst>0.1</foc_sl_openloop_hyst>
     <foc_sl_openloop_time_lock>0.1</foc_sl_openloop_time_lock>
     <foc_sl_openloop_time_ramp>0.1</foc_sl_openloop_time_ramp>
-    <foc_sl_openloop_time>0.1</foc_sl_openloop_time>
+    <foc_sl_openloop_time>0.3</foc_sl_openloop_time>
     <foc_sl_openloop_boost_q>0.4</foc_sl_openloop_boost_q>
-    <foc_sl_openloop_max_q>20</foc_sl_openloop_max_q>
+    <foc_sl_openloop_max_q>25</foc_sl_openloop_max_q>
     <foc_hall_table__0>255</foc_hall_table__0>
     <foc_hall_table__1>255</foc_hall_table__1>
     <foc_hall_table__2>255</foc_hall_table__2>
@@ -113,9 +113,9 @@
     <foc_hfi_obs_ovr_sec>0.001</foc_hfi_obs_ovr_sec>
     <foc_hfi_samples>1</foc_hfi_samples>
     <foc_offsets_cal_on_boot>1</foc_offsets_cal_on_boot>
-    <foc_offsets_current__0>2048.94</foc_offsets_current__0>
-    <foc_offsets_current__1>2049.79</foc_offsets_current__1>
-    <foc_offsets_current__2>2048.57</foc_offsets_current__2>
+    <foc_offsets_current__0>2048.79</foc_offsets_current__0>
+    <foc_offsets_current__1>2049.33</foc_offsets_current__1>
+    <foc_offsets_current__2>2047.81</foc_offsets_current__2>
     <foc_offsets_voltage__0>0.0001</foc_offsets_voltage__0>
     <foc_offsets_voltage__1>0.0005</foc_offsets_voltage__1>
     <foc_offsets_voltage__2>-0.0007</foc_offsets_voltage__2>
@@ -139,7 +139,7 @@
     <s_pid_kd_filter>0.2</s_pid_kd_filter>
     <s_pid_min_erpm>300</s_pid_min_erpm>
     <s_pid_allow_braking>1</s_pid_allow_braking>
-    <s_pid_ramp_erpms_s>70000</s_pid_ramp_erpms_s>
+    <s_pid_ramp_erpms_s>50000</s_pid_ramp_erpms_s>
     <s_pid_speed_source>0</s_pid_speed_source>
     <p_pid_kp>0.025</p_pid_kp>
     <p_pid_ki>0</p_pid_ki>
