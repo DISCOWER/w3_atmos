@@ -96,12 +96,20 @@
 		}).join("") + '</div>';
 	}
 
+	function quantityCell(item) {
+		if (item.quantity == null || item.quantity === "") {
+			return '<span class="bom-qty-unknown" aria-label="Quantity not listed">&mdash;</span>';
+		}
+		return escapeHtml(item.quantity);
+	}
+
 	function rowHtml(item, selected) {
 		var selection = selectionFor(item);
 		return '<tr class="' + (item.parent ? "bom-sub" : "") + '">' +
 			'<td class="bom-id">' + escapeHtml(item.id) + '</td>' +
 			'<td><span class="bom-item-name">' + escapeHtml(item.name) + '</span>' +
 			'<p class="bom-item-desc">' + escapeHtml(item.description) + '</p></td>' +
+			'<td class="bom-qty">' + quantityCell(item) + '</td>' +
 			'<td>' + alternativeCell(item, selection) + '</td>' +
 			'<td>' + itemLinksCell(selection.alternative) + '</td>' +
 			'<td>' + moduleCell(item, selected) + '</td></tr>';
@@ -119,7 +127,7 @@
 			});
 			if (!items.length) return;
 			count += items.length;
-			rows += '<tr class="bom-cat bom-cat-' + category.toLowerCase() + '"><th scope="rowgroup" colspan="5">' +
+			rows += '<tr class="bom-cat bom-cat-' + category.toLowerCase() + '"><th scope="rowgroup" colspan="6">' +
 				escapeHtml(category) + '<span class="bom-category-count">' + items.length + ' parts</span></th></tr>' +
 				items.map(function (item) { return rowHtml(item, selected); }).join("");
 		});
@@ -129,6 +137,7 @@
 		results.innerHTML = '<table class="bom-table"><thead><tr>' +
 			'<th class="bom-col-id" title="Part number">Part</th>' +
 			'<th class="bom-col-item">Component</th>' +
+			'<th class="bom-col-qty" title="Quantity">Qty</th>' +
 			'<th class="bom-col-alternatives">Alternatives</th>' +
 			'<th class="bom-col-links">Item links</th>' +
 			'<th class="bom-col-mod">Required for</th>' +
