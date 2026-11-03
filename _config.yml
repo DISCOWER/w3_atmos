@@ -10,7 +10,7 @@ version: 1.0
 gitbook_version: 3.2.3
 
 url: "https://atmos.discower.io"
-baseurl: ""
+baseurl: "/"
 rss: RSS
 
 # bootstrap: use the remote theme for the site itself
@@ -51,28 +51,19 @@ exclude:
   - MYREADME.md
 
 collections:
-  bom_pages:
+  pages:
     output: true
-    permalink: /bom_pages/:path/
-  module_pages:
-    output: true
-    permalink: /module_pages/:path/
-  software_pages:
-    output: true
-    permalink: /software_pages/:path/
-  misc_pages:
+    permalink: /:collection/:path/
+  others:
     output: true
     permalink: /:collection/:path/
 
 ordered_collections:
-  - bom_pages
-  - module_pages
-  - software_pages
-  - misc_pages
+  - posts
+  - pages
+  - others
 
-data_dir: _bom_pages/data
-
-page_width: 1000px
+page_width: 800px
 
 destination: ./_site
 incremental: false
@@ -82,4 +73,3 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
-  - jekyll-remote-theme
