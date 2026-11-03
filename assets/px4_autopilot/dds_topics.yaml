@@ -9,28 +9,13 @@ publications:
     type: px4_msgs::msg::BatteryStatus
     rate_limit: 1.
 
-  # - topic: /fmu/out/sensor_combined
-  #   type: px4_msgs::msg::SensorCombined
-
-  - topic: /fmu/out/vehicle_angular_velocity
-    type: px4_msgs::msg::VehicleAngularVelocity
-    rate_limit: 50.
-
-  - topic: /fmu/out/vehicle_attitude
-    type: px4_msgs::msg::VehicleAttitude
-    rate_limit: 50.
-
   - topic: /fmu/out/vehicle_control_mode
     type: px4_msgs::msg::VehicleControlMode
-    rate_limit: 50.
-
-  - topic: /fmu/out/vehicle_local_position
-    type: px4_msgs::msg::VehicleLocalPosition
-    rate_limit: 50.
+    rate_limit: 10.
 
   - topic: /fmu/out/vehicle_odometry
     type: px4_msgs::msg::VehicleOdometry
-    rate_limit: 100.
+    rate_limit: 50.
 
   - topic: /fmu/out/vehicle_status
     type: px4_msgs::msg::VehicleStatus
@@ -48,15 +33,9 @@ publications:
     type: px4_msgs::msg::VehicleThrustSetpoint
     rate_limit: 50.
 
-  # - topic: /fmu/out/log_message
-  #   type: px4_msgs::msg::LogMessage
-
-  # - topic: /fmu/out/mavlink_log
-  #   type: px4_msgs::msg::MavlinkLog
-
   - topic: /fmu/out/rc_channels
     type: px4_msgs::msg::RcChannels
-    rate_limit: 10.
+    rate_limit: 50.
 
   - topic: /fmu/out/vehicle_rates_setpoint
     type: px4_msgs::msg::VehicleRatesSetpoint
@@ -66,25 +45,17 @@ publications:
     type: px4_msgs::msg::VehicleCommand
     rate_limit: 50.
 
-subscriptions:
+  - topic: /fmu/out/estimator_status_flags
+    type: px4_msgs::msg::EstimatorStatusFlags
+    rate_limit: 1.
 
-  - topic: /fmu/in/arming_check_reply
-    type: px4_msgs::msg::ArmingCheckReply
+subscriptions:
 
   - topic: /fmu/in/manual_control_input
     type: px4_msgs::msg::ManualControlSetpoint
 
   - topic: /fmu/in/offboard_control_mode
     type: px4_msgs::msg::OffboardControlMode
-
-  - topic: /fmu/in/onboard_computer_status
-    type: px4_msgs::msg::OnboardComputerStatus
-
-  - topic: /fmu/in/telemetry_status
-    type: px4_msgs::msg::TelemetryStatus
-
-  - topic: /fmu/in/trajectory_setpoint
-    type: px4_msgs::msg::TrajectorySetpoint
 
   - topic: /fmu/in/vehicle_attitude_setpoint
     type: px4_msgs::msg::VehicleAttitudeSetpoint

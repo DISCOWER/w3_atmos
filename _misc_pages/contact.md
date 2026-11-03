@@ -10,8 +10,8 @@ In case you have any questions regarding the platform, files, or integration, fe
 
 Click the image below to join us on Discord!
 
-<div style="width: 50%; margin-left: auto; margin-right: auto; padding-top: 25px;">
+<div style="margin-left: auto; margin-right: auto; padding-top: 25px; text-align: center;">
 <a href="https://discord.gg/gqN4qnuRUP">
-    <img src="https://cdnlogo.com/logos/d/33/discord-wordmark.svg" alt="DISCOWER ATMOS Discord" />
+    <img src="/assets/contact/Discord_Logo.svg" alt="DISCOWER ATMOS Discord" style="width: 40%;" />
 </a>
 </div>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+
+        {%- include head.html -%}
+
+        {% assign ordered_posts = site[page.collection] | where_exp: "item", "item.order_no >= 0" | sort: "order_no" %}
+        {% assign current_index = -1 %}
+        {% for ordered_post in ordered_posts %}
+            {% if ordered_post.url == page.url %}
+                {% assign current_index = forloop.index0 %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        {% assign previous_index = current_index | minus: 1 %}
+        {% assign next_index = current_index | plus: 1 %}
+        {% assign previous_post = ordered_posts[previous_index] %}
+        {% assign next_post = ordered_posts[next_index] %}
+
+        {% if previous_post %}
+            <link rel="prev" href="{{site.baseurl}}{{previous_post.url}}" />
+        {% else %}
+            <link rel="prev" href="{{site.baseurl}}/" />
+        {% endif %}
+
+        {% if next_post %}
+            <link rel="next" href="{{site.baseurl}}{{next_post.url}}" />
+        {% endif %}
+    </head>
+    <body>
+        <div class="book">
+
+            {%- include toc-date.html -%}
+
+            <div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        <!-- {% if page.title %}
+                            <a href="." >{{ page.title | escape }}</a>
+                        {% else %}
+                            <a href="." >{{ site.title | escape }}</a>
+                        {% endif %} -->
+                    </h1>
+                </div>
+
+                <div class="body-inner">
+                    {%- include body.html -%}
+
+                    {% if previous_post %}
+                        <a href="{{site.baseurl}}{{previous_post.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{previous_post.title}}">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    {% else %}
+                        <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    {% endif %}
+
+                    {% if next_post %}
+                        <a href="{{site.baseurl}}{{next_post.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{next_post.title}}">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({%- include metadata-post.json.tpl -%});
+            });
+            </script>
+        </div>
+
+        {%- include footer.html -%}
+
+        <!-- jQuery (Load first) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        {% if site.mathjax.enabled %}
+            {%- include mathjax.html -%}
+        {% endif %}
+
+    </body>
+</html>
