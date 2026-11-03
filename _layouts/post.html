@@ -4,14 +4,27 @@
 
         {%- include head.html -%}
 
-        {% if page.previous %}
-            <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
+        {% assign ordered_posts = site.module_pages | where_exp: "item", "item.order_no >= 0" | sort: "order_no" %}
+        {% assign current_index = -1 %}
+        {% for ordered_post in ordered_posts %}
+            {% if ordered_post.url == page.url %}
+                {% assign current_index = forloop.index0 %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        {% assign previous_index = current_index | minus: 1 %}
+        {% assign next_index = current_index | plus: 1 %}
+        {% assign previous_post = ordered_posts[previous_index] %}
+        {% assign next_post = ordered_posts[next_index] %}
+
+        {% if previous_post %}
+            <link rel="prev" href="{{site.baseurl}}{{previous_post.url}}" />
         {% else %}
             <link rel="prev" href="{{site.baseurl}}/" />
         {% endif %}
 
-        {% if page.next %}
-            <link rel="next" href="{{site.baseurl}}{{page.next.url}}" />
+        {% if next_post %}
+            <link rel="next" href="{{site.baseurl}}{{next_post.url}}" />
         {% endif %}
     </head>
     <body>
@@ -35,8 +48,8 @@
                 <div class="body-inner">
                     {%- include body.html -%}
 
-                    {% if page.previous %}
-                        <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
+                    {% if previous_post %}
+                        <a href="{{site.baseurl}}{{previous_post.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{previous_post.title}}">
                             <i class="fa fa-angle-left"></i>
                         </a>
                     {% else %}
@@ -45,8 +58,8 @@
                         </a>
                     {% endif %}
 
-                    {% if page.next %}
-                        <a href="{{site.baseurl}}{{page.next.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{page.next.title}}">
+                    {% if next_post %}
+                        <a href="{{site.baseurl}}{{next_post.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{next_post.title}}">
                             <i class="fa fa-angle-right"></i>
                         </a>
                     {% endif %}
