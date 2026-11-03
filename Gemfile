@@ -7,6 +7,7 @@ gem "jekyll"
 gem 'jekyll-feed'
 gem 'jekyll-readme-index'
 gem 'jemoji'
+gem 'jekyll-remote-theme'
 gem 'webrick'
 
 # gem "rails"
