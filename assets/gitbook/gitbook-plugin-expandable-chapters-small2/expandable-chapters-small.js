@@ -1,26 +1,47 @@
 require(['gitbook', 'jQuery'], function (gitbook, $) {
-    var TOGGLE_CLASSNAME = 'expanded',
+    var PLUGIN = 'expandable-chapter-small2',
+        TOGGLE_CLASSNAME = 'expanded',
         CHAPTER = '.chapter',
-        FOLDABLE = '.chapter, .chapter li',
+        // ARTICLES = '.articles',
         ARTICLES = '.chapter ul',
+        FOLDABLE = '.chapter, .chapter li',
         ARTICLE_CHILDREN = 'ul',
         TRIGGER_TEMPLATE = '<i class="exc-trigger fa"></i>',
         LS_NAMESPACE = 'expChapters';
 
     var init = function () {
-        $(ARTICLES)
-            .parent(CHAPTER)
-            .find(ARTICLE_CHILDREN)
-            .prev()
-            .append(
-                $(TRIGGER_TEMPLATE)
-                    .on('click', function (e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        toggle($(e.currentTarget).closest(CHAPTER));
-                    })
-            );
-
+        // adding the trigger element to each ARTICLES parent and binding the event
+        var config = gitbook.state.config.pluginsConfig || {};
+        var articlesExpand = false;
+        if (config && config[PLUGIN]) {
+            articlesExpand = config[PLUGIN].articlesExpand || false;
+        }
+        if (articlesExpand) {
+            $(ARTICLES)
+                .parent(CHAPTER)
+                .find(ARTICLE_CHILDREN)
+                .prev()
+                .css('cursor', 'pointer')
+                .on('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggle($(e.target).closest(FOLDABLE));
+                })
+                .append(TRIGGER_TEMPLATE);
+        } else {
+            $(ARTICLES)
+                .parent(CHAPTER)
+                .find(ARTICLE_CHILDREN)
+                .prev()
+                .append(
+                    $(TRIGGER_TEMPLATE)
+                        .on('click', function (e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            toggle($(e.target).closest(FOLDABLE));
+                        })
+                );
+        }
         expand(lsItem());
 
         // expand current selected chapter with it's parents
@@ -28,7 +49,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
         expand(activeChapter);
 
         // expand current selected chapter's children
-        expand(activeChapter.parents(CHAPTER));
+        // expand(activeChapter.parents(CHAPTER));
         activeChapter.find(ARTICLE_CHILDREN).closest(FOLDABLE).each(function () {
             expand($(this));
         });
