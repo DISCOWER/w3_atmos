@@ -33,8 +33,11 @@ ENV PATH /root/.rvm/rubies/ruby-3.2.4/bin:$PATH
 
 # Create a working directory
 WORKDIR /workspace
-RUN bundle install
-RUN bundle exec jekyll serve --baseurl=""
+# RUN bundle install
+# RUN bundle exec jekyll serve --baseurl=""
+
+# RUN /bin/bash -l -c "bundle install"
+EXPOSE 4000
 
 # Default command to run when the container starts
 CMD ["bash"]
