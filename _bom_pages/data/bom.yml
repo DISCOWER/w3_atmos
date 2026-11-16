@@ -19,7 +19,7 @@ configuration:
         default: true
       - id: discower-prop
         label: DISCOWER propeller plate
-        model: /3D/2.1%20Middle%20Plate%20Propeller/2_1_a.glb
+        model: /3D/2.1%20Middle%20Plate%20Propeller/2_1_f.glb
         default: false
   - title: Avionics plates
     choices:
