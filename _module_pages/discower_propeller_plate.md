@@ -239,16 +239,16 @@ Below 3D view illustrates each motor module (M1-M4). Refer to it for correct pla
 			  ar 
 			  camera-controls 
 			  shadow-intensity="1">
-	 <button class="hotspot" slot="hotspot-module-1" data-position="-0.02 0.36 -0.015" data-normal="0 0 -1">
+	 <button class="hotspot" slot="hotspot-module-1" data-position="-0.02 0.05 -0.015" data-normal="0 0 -1">
 		 <div class="annotation">M1</div>
 	</button>
-	 <button class="hotspot" slot="hotspot-module-2" data-position="0.13 0.36 0.05" data-normal="0 0 -1">
+	 <button class="hotspot" slot="hotspot-module-2" data-position="0.13 0.05 0.05" data-normal="0 0 -1">
 		 <div class="annotation">M4</div>
 	</button>
-		<button class="hotspot" slot="hotspot-module-3" data-position="-0.09 0.36 0.13" data-normal="0 0 -1">
+		<button class="hotspot" slot="hotspot-module-3" data-position="-0.09 0.05 0.13" data-normal="0 0 -1">
 		 <div class="annotation">M3</div>
 	</button>
-		<button class="hotspot" slot="hotspot-module-4" data-position="0.06 0.36 0.2" data-normal="0 0 -1">
+		<button class="hotspot" slot="hotspot-module-4" data-position="0.06 0.05 0.2" data-normal="0 0 -1">
 		 <div class="annotation">M2</div>
 	</button>
 </model-viewer>
