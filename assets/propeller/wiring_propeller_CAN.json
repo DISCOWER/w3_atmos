@@ -1,5 +1,5 @@
 {
-  "version": "32.7.3",
+  "version": "32.7.1",
   "pages": [
     {
       "id": "wiring",
@@ -893,6 +893,13 @@
           "id": "qGVOgMZTsXov4GrvYAGm-4",
           "type": "edge",
           "parent": "1"
+        },
+        {
+          "id": "Jz5qJoauVm3-LFujTL9_-1",
+          "type": "node",
+          "parent": "1",
+          "label": "XT60 Power Distribution Hub",
+          "html": "<b>XT60 Power Distribution Hub</b>"
         }
       ]
     }
