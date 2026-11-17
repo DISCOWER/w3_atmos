@@ -183,16 +183,9 @@ Each motor is driven by its own VESC 6 EDU controller, for four VESCs in total. 
 
 ### Wiring Diagram
 
-After assembling each motor module, wire the corresponding VESC 6 EDU controller to power and to the CAN bus as follows. Each VESC takes power directly from the battery, and shares its CAN H / CAN L pair with the CAN hub. The table below summarizes the per-motor wiring.
+After assembling each motor module, wire the corresponding VESC 6 EDU controller to power and to the CAN bus as follows. Each VESC takes power directly from the battery, and shares its CAN H / CAN L pair with the CAN hub. 
 
 ![CAN wiring diagram for the propeller plate](/assets/propeller/wiring_propeller_CAN.png)
-
-| **Motor** | **Driver** | **Power Connection**                                | **CAN Connection**          |
-|-----------|------------|-----------------------------------------------------|-----------------------------|
-| **M1**    | VESC 1     | VESC power input → XT60 Power Distribution Module   | CAN H / CAN L → CAN HUB     |
-| **M2**    | VESC 2     | VESC power input → XT60 Power Distribution Module   | CAN H / CAN L → CAN HUB     |
-| **M3**    | VESC 3     | VESC power input → XT60 Power Distribution Module   | CAN H / CAN L → CAN HUB     |
-| **M4**    | VESC 4     | VESC power input → XT60 Power Distribution Module   | CAN H / CAN L → CAN HUB     |
 
 The CAN HUB aggregates the four CAN H / CAN L pairs coming from the VESC controllers into a single pair, which connects directly to the CAN port on the PX4 flight controller. No PWM wiring is required for this configuration, since motor commands are sent over CAN.
 
