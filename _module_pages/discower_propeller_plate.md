@@ -8,8 +8,6 @@ category: Jekyll
 layout: post
 ---
 
-<p style="color: red;"><strong><em>This page is a work-in-progress</em></strong></p>
-
 The second layer in the free-flyer is the actuation plate. This layer is a modular component that provides propulsion via brushless motors and propellers, but which can also be switched for other actuator models. Below, you can see the 3D model of the propeller plate with 4 motors.
 
 <html>

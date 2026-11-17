@@ -1,0 +1,900 @@
+{
+  "version": "32.7.3",
+  "pages": [
+    {
+      "id": "wiring",
+      "name": "Wiring",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "c11",
+          "type": "node",
+          "parent": "1",
+          "label": "PX4\nflight controller",
+          "html": "<b>PX4</b><br>flight controller"
+        },
+        {
+          "id": "c12",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c13",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN_H"
+        },
+        {
+          "id": "c14",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN_L"
+        },
+        {
+          "id": "c15",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c16",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN1"
+        },
+        {
+          "id": "c17",
+          "type": "node",
+          "parent": "1",
+          "label": "Holybro CAN HUB",
+          "html": "<b>Holybro CAN HUB</b>"
+        },
+        {
+          "id": "c18",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c19",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN_H"
+        },
+        {
+          "id": "c20",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN_L"
+        },
+        {
+          "id": "c21",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c22",
+          "type": "node",
+          "parent": "1",
+          "label": "IN"
+        },
+        {
+          "id": "c23",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c24",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c25",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c26",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c27",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c28",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c29",
+          "type": "node",
+          "parent": "1",
+          "label": "H"
+        },
+        {
+          "id": "c30",
+          "type": "node",
+          "parent": "1",
+          "label": "H"
+        },
+        {
+          "id": "c31",
+          "type": "node",
+          "parent": "1",
+          "label": "L"
+        },
+        {
+          "id": "c32",
+          "type": "node",
+          "parent": "1",
+          "label": "L"
+        },
+        {
+          "id": "c33",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c34",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c35",
+          "type": "node",
+          "parent": "1",
+          "label": "OUT1"
+        },
+        {
+          "id": "c36",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c37",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c38",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c39",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c40",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c41",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c42",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c43",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c44",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c45",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c46",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c47",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c48",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c49",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c50",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN"
+        },
+        {
+          "id": "c51",
+          "type": "node",
+          "parent": "1",
+          "label": "(twisted pair)"
+        },
+        {
+          "id": "c52",
+          "type": "node",
+          "parent": "1",
+          "label": "VESC 6 EDU\nESC 1",
+          "html": "<b>VESC 6 EDU</b><br>ESC 1"
+        },
+        {
+          "id": "c53",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c54",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c55",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c56",
+          "type": "node",
+          "parent": "1",
+          "label": "A, B, C"
+        },
+        {
+          "id": "c57",
+          "type": "node",
+          "parent": "1",
+          "label": "VELOX\nmotor 1",
+          "html": "<b>VELOX</b><br>motor 1"
+        },
+        {
+          "id": "c58",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c59",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c60",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "c61",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "c62",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c63",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c64",
+          "type": "node",
+          "parent": "1",
+          "label": "H"
+        },
+        {
+          "id": "c65",
+          "type": "node",
+          "parent": "1",
+          "label": "H"
+        },
+        {
+          "id": "c66",
+          "type": "node",
+          "parent": "1",
+          "label": "L"
+        },
+        {
+          "id": "c67",
+          "type": "node",
+          "parent": "1",
+          "label": "L"
+        },
+        {
+          "id": "c68",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c69",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c70",
+          "type": "node",
+          "parent": "1",
+          "label": "OUT2"
+        },
+        {
+          "id": "c71",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c72",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c73",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c74",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c75",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c76",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c77",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c78",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c79",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c80",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c81",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c82",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c83",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c84",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c85",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN"
+        },
+        {
+          "id": "c86",
+          "type": "node",
+          "parent": "1",
+          "label": "(twisted pair)"
+        },
+        {
+          "id": "c87",
+          "type": "node",
+          "parent": "1",
+          "label": "VESC 6 EDU\nESC 2",
+          "html": "<b>VESC 6 EDU</b><br>ESC 2"
+        },
+        {
+          "id": "c88",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c89",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c90",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c91",
+          "type": "node",
+          "parent": "1",
+          "label": "A, B, C"
+        },
+        {
+          "id": "c92",
+          "type": "node",
+          "parent": "1",
+          "label": "VELOX\nmotor 2",
+          "html": "<b>VELOX</b><br>motor 2"
+        },
+        {
+          "id": "c93",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c94",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c95",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "c96",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "c97",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c98",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c99",
+          "type": "node",
+          "parent": "1",
+          "label": "H"
+        },
+        {
+          "id": "c100",
+          "type": "node",
+          "parent": "1",
+          "label": "H"
+        },
+        {
+          "id": "c101",
+          "type": "node",
+          "parent": "1",
+          "label": "L"
+        },
+        {
+          "id": "c102",
+          "type": "node",
+          "parent": "1",
+          "label": "L"
+        },
+        {
+          "id": "c103",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c104",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c105",
+          "type": "node",
+          "parent": "1",
+          "label": "OUT3"
+        },
+        {
+          "id": "c106",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c107",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c108",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c109",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c110",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c111",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c112",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c113",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c114",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c115",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c116",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c117",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c118",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c119",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c120",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN"
+        },
+        {
+          "id": "c121",
+          "type": "node",
+          "parent": "1",
+          "label": "(twisted pair)"
+        },
+        {
+          "id": "c122",
+          "type": "node",
+          "parent": "1",
+          "label": "VESC 6 EDU\nESC 3",
+          "html": "<b>VESC 6 EDU</b><br>ESC 3"
+        },
+        {
+          "id": "c123",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c124",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c125",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c126",
+          "type": "node",
+          "parent": "1",
+          "label": "A, B, C"
+        },
+        {
+          "id": "c127",
+          "type": "node",
+          "parent": "1",
+          "label": "VELOX\nmotor 3",
+          "html": "<b>VELOX</b><br>motor 3"
+        },
+        {
+          "id": "c128",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c129",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c130",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "c131",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "c132",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c133",
+          "type": "node",
+          "parent": "1",
+          "label": "5V"
+        },
+        {
+          "id": "c134",
+          "type": "node",
+          "parent": "1",
+          "label": "H"
+        },
+        {
+          "id": "c135",
+          "type": "node",
+          "parent": "1",
+          "label": "H"
+        },
+        {
+          "id": "c136",
+          "type": "node",
+          "parent": "1",
+          "label": "L"
+        },
+        {
+          "id": "c137",
+          "type": "node",
+          "parent": "1",
+          "label": "L"
+        },
+        {
+          "id": "c138",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c139",
+          "type": "node",
+          "parent": "1",
+          "label": "GND"
+        },
+        {
+          "id": "c140",
+          "type": "node",
+          "parent": "1",
+          "label": "OUT4"
+        },
+        {
+          "id": "c141",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c142",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c143",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c144",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c145",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c146",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c147",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c148",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c149",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c150",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c151",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c152",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c153",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c154",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c155",
+          "type": "node",
+          "parent": "1",
+          "label": "CAN"
+        },
+        {
+          "id": "c156",
+          "type": "node",
+          "parent": "1",
+          "label": "(twisted pair)"
+        },
+        {
+          "id": "c157",
+          "type": "node",
+          "parent": "1",
+          "label": "VESC 6 EDU\nESC 4",
+          "html": "<b>VESC 6 EDU</b><br>ESC 4"
+        },
+        {
+          "id": "c158",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c159",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c160",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c161",
+          "type": "node",
+          "parent": "1",
+          "label": "A, B, C"
+        },
+        {
+          "id": "c162",
+          "type": "node",
+          "parent": "1",
+          "label": "VELOX\nmotor 4",
+          "html": "<b>VELOX</b><br>motor 4"
+        },
+        {
+          "id": "c163",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c164",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c165",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "c166",
+          "type": "node",
+          "parent": "1"
+        },
+        {
+          "id": "c167",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c168",
+          "type": "edge",
+          "parent": "1"
+        },
+        {
+          "id": "c169",
+          "type": "node",
+          "parent": "1",
+          "label": "VBAT (6S battery +)"
+        },
+        {
+          "id": "c170",
+          "type": "node",
+          "parent": "1",
+          "label": "GND (6S battery −)"
+        },
+        {
+          "id": "qGVOgMZTsXov4GrvYAGm-4",
+          "type": "edge",
+          "parent": "1"
+        }
+      ]
+    }
+  ]
+}
