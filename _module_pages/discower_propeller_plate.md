@@ -8,8 +8,6 @@ category: Jekyll
 layout: post
 ---
 
-<p style="color: red;"><strong><em>This page is a work-in-progress</em></strong></p>
-
 The second layer in the free-flyer is the actuation plate. This layer is a modular component that provides propulsion via brushless motors and propellers, but which can also be switched for other actuator models. Below, you can see the 3D model of the propeller plate with 4 motors.
 
 <html>
@@ -185,16 +183,9 @@ Each motor is driven by its own VESC 6 EDU controller, for four VESCs in total. 
 
 ### Wiring Diagram
 
-After assembling each motor module, wire the corresponding VESC 6 EDU controller to power and to the CAN bus as follows. Each VESC takes power directly from the battery, and shares its CAN H / CAN L pair with the CAN hub. The table below summarizes the per-motor wiring.
+After assembling each motor module, wire the corresponding VESC 6 EDU controller to power and to the CAN bus as follows. Each VESC takes power directly from the battery, and shares its CAN H / CAN L pair with the CAN hub. 
 
 ![CAN wiring diagram for the propeller plate](/assets/propeller/wiring_propeller_CAN.png)
-
-| **Motor** | **Driver** | **Power Connection**                                | **CAN Connection**          |
-|-----------|------------|-----------------------------------------------------|-----------------------------|
-| **M1**    | VESC 1     | VESC power input → XT60 Power Distribution Module   | CAN H / CAN L → CAN HUB     |
-| **M2**    | VESC 2     | VESC power input → XT60 Power Distribution Module   | CAN H / CAN L → CAN HUB     |
-| **M3**    | VESC 3     | VESC power input → XT60 Power Distribution Module   | CAN H / CAN L → CAN HUB     |
-| **M4**    | VESC 4     | VESC power input → XT60 Power Distribution Module   | CAN H / CAN L → CAN HUB     |
 
 The CAN HUB aggregates the four CAN H / CAN L pairs coming from the VESC controllers into a single pair, which connects directly to the CAN port on the PX4 flight controller. No PWM wiring is required for this configuration, since motor commands are sent over CAN.
 
@@ -239,16 +230,16 @@ Below 3D view illustrates each motor module (M1-M4). Refer to it for correct pla
 			  ar 
 			  camera-controls 
 			  shadow-intensity="1">
-	 <button class="hotspot" slot="hotspot-module-1" data-position="-0.02 0.36 -0.015" data-normal="0 0 -1">
+	 <button class="hotspot" slot="hotspot-module-1" data-position="-0.02 0.05 -0.015" data-normal="0 0 -1">
 		 <div class="annotation">M1</div>
 	</button>
-	 <button class="hotspot" slot="hotspot-module-2" data-position="0.13 0.36 0.05" data-normal="0 0 -1">
+	 <button class="hotspot" slot="hotspot-module-2" data-position="0.13 0.05 0.05" data-normal="0 0 -1">
 		 <div class="annotation">M4</div>
 	</button>
-		<button class="hotspot" slot="hotspot-module-3" data-position="-0.09 0.36 0.13" data-normal="0 0 -1">
+		<button class="hotspot" slot="hotspot-module-3" data-position="-0.09 0.05 0.13" data-normal="0 0 -1">
 		 <div class="annotation">M3</div>
 	</button>
-		<button class="hotspot" slot="hotspot-module-4" data-position="0.06 0.36 0.2" data-normal="0 0 -1">
+		<button class="hotspot" slot="hotspot-module-4" data-position="0.06 0.05 0.2" data-normal="0 0 -1">
 		 <div class="annotation">M2</div>
 	</button>
 </model-viewer>

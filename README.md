@@ -36,6 +36,10 @@ Here you can see the 3D platform used in DISCOWER. In this website, we provide d
 
 ### Changelog
 The latest changes to the documentation can be found below:
+- **2026-11-17**:
+  - Updated the Propeller Plate wiring diagram to match the as-built system. The VESC Express data loggers from the earlier design are no longer included.
+  - Updated the Propeller Plate 3D renderings.
+  - Removed the work-in-progress remark from the Propeller Plate page.
 - **2026-10-30**:
   - Added the DISCOWER Propeller Plate as an alternative actuation option, with mechanical, wiring, and software build instructions. The page is marked as a work in progress while the polycarbonate plate is finalized.
   - Reworked the Bill of Materials so users can select a module configuration and market (EU or US), with alternative parts and multiple supplier links. BOM entries are now maintained in `bom.yml`.
