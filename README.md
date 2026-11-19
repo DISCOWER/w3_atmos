@@ -11,7 +11,7 @@ ATMOS is a free-flyer platform developed at the KTH Space Robotics Laboratory fo
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<model-viewer src="/3D/full_assy_wAttachments.glb" 
+<model-viewer src="/3D/full_assy.glb" 
               alt="A 3D model" 
               ar 
               auto-rotate 
