@@ -90,7 +90,7 @@ On this page, you find a collection of laboratories using ATMOS and/or PX4Space.
 At KTH's Space Robotics Laboratory, ATMOS is the platform currently being used:
 
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<model-viewer src="/3D/2.1 Middle Plate Propeller/alpha3_v4.1_dual.glb" 
+<model-viewer src="/3D/full_assy_pegboard.glb" 
               alt="A 3D model" 
               ar 
               auto-rotate 

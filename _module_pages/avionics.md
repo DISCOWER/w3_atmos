@@ -166,6 +166,10 @@ Payloads can now be attached to the top of the platform, with power drawn from t
 1. **Aluminium Profiles:** attach payloads directly to the vertical aluminium profiles installed in the previous step, using T-slot nuts and angle brackets. This is best for heavy or custom-shaped payloads.
 2. **Pegboard Top Cover:** for quick, reconfigurable mounting, 3D print the optional pegboard top cover (download link below) and fix it on top of the aluminium profiles. Its grid of 4 mm holes lets you attach sensors, cameras or custom brackets with M4 bolts and nuts, or with pegboard-style clips, so components can be moved or swapped without modifying the frame.
 
+<div style="display: table; width: 500px; margin: 20px auto; border: 2px solid #000000; padding: 10px; text-align: center; background-color: var(background-color, #ffffff); border-radius: 4px;">
+  Download the <a href="/stl/electronics_plate/top_cover_pegboard.STL" download>Pegboard Top Cover</a> STL file.
+</div>
+
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <model-viewer src="/3D/4. Top Plate/4_f.glb" 
@@ -184,26 +188,4 @@ Payloads can now be attached to the top of the platform, with power drawn from t
 </style>
 </html>
 
-The pegboard top cover that can be installed on the platform is shown in the 3D model below.
 
-<html>
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<model-viewer src="/3D/4. Top Plate/top_plate_pegboard.glb" 
-			  alt="Top plate with pegboard top cover" 
-			  ar 
-			  auto-rotate 
-			  camera-controls 
-			  shadow-intensity="1">
-</model-viewer>
-<style>
-	model-viewer {
-		width: 100%;
-		height: 500px;
-		background-color: var(background-color, #ffffff);
-	}
-</style>
-</html>
-
-<div style="display: table; width: 500px; margin: 20px auto; border: 2px solid #000000; padding: 10px; text-align: center; background-color: var(background-color, #ffffff); border-radius: 4px;">
-  Download the <a href="/stl/electronics_plate/top_cover_pegboard.STL" download>Pegboard Top Cover</a> STL file.
-</div>
