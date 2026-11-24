@@ -36,6 +36,9 @@ Here you can see the 3D platform used in DISCOWER. In this website, we provide d
 
 ### Changelog
 The latest changes to the documentation can be found below:
+- **2026-11-24**:
+  - Updated the 3D models to match the ATMOS platform as built in the KTH Space Robotics Laboratory (without payload attachments and with pegboard-style top cover).
+  - Added a Payload Mounting section to the Avionics page. It describes two mounting options, with aluminium profiles or with 3D-printable pegboard top cover, and includes a download link for the cover's STL file.
 - **2026-11-17**:
   - Updated the Propeller Plate wiring diagram to match the as-built system. The VESC Express data loggers from the earlier design are no longer included.
   - Updated the Propeller Plate 3D renderings.
