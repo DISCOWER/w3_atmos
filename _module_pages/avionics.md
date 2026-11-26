@@ -161,7 +161,14 @@ The last step is to install the aluminium profiles for payload support. Each ver
 
 ## Payload Mounting
 
-Payloads can now be attached to the top of the platform and power and data can be collected from the XT60 hub and the onboard computer.
+Payloads can now be attached to the top of the platform, with power drawn from the XT60 hub and data connected to the onboard computer. There are two ways to mount payloads:
+
+1. **Aluminium Profiles:** attach payloads directly to the vertical aluminium profiles installed in the previous step, using T-slot nuts and angle brackets. This is best for heavy or custom-shaped payloads.
+2. **Pegboard Top Cover:** for quick, reconfigurable mounting, 3D print the optional pegboard top cover (download link below) and fix it on top of the aluminium profiles. Its grid of 4 mm holes lets you attach sensors, cameras or custom brackets with M4 bolts and nuts, or with pegboard-style clips, so components can be moved or swapped without modifying the frame.
+
+<div style="display: table; width: 500px; margin: 20px auto; border: 2px solid #000000; padding: 10px; text-align: center; background-color: var(background-color, #ffffff); border-radius: 4px;">
+  Download the <a href="/stl/electronics_plate/top_cover_pegboard.STL" download>Pegboard Top Cover</a> STL file.
+</div>
 
 <html>
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -180,3 +187,5 @@ Payloads can now be attached to the top of the platform and power and data can b
 	}
 </style>
 </html>
+
+
